@@ -2,3 +2,11 @@ name: DXH30 ~ Opt.Tr
 description: Analytical Programming & CTF Soln'
 url: "https://dxh30.github.io/"
 theme: jekyll-theme-cayman
+include:
+        - CONTRIBUTING.md
+        - README.md
+        - LICENSE.md
+        - COPYING.md
+        - CODE_OF_CONDUCT.md
+        - ISSUE_TEMPLATE.md
+        - PULL_REQUEST_TEMPLATE.md
