@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DXH30
-email: dhs0223@example.com
+email: dhs0223@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   DXH30 website for Programming and CTF's Write Ups.
   and History for github Projects
