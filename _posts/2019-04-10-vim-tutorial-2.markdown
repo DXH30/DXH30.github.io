@@ -17,6 +17,7 @@ int main()
 ```
 
 untuk memanfaatkan keyboard sepenuhnya (pure keyboard) navigasi di vim sama seperti navigasi standard buat yang sering maen game Rogue (contoh : StoneSoup). yakni 
+
 | tombol | keterangan |
 |:-------|:-----------|
 |h	 |kanan	      |
