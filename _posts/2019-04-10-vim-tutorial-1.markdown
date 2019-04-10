@@ -1,4 +1,4 @@
-# Tutorial Vim 1 Basic Editing
+## Tutorial Vim 1 Basic Editing
 Editor vim biasanya dapat ditemukan di Linux pada umumnya. Namun jika tidak ditemukan dengan nama vim, dapat dibuka dengan perintah
 
 ```console
@@ -51,6 +51,8 @@ Segini saja sudah cukup untuk menggunakan vim untuk keperluan editting teks bias
 
 Tutorial selanjutnya adalah cara navigasi di vim
 
-Tips vim *Hang* : 
+```
+Tips vim Hang : 
 Jika tidak sengaja menekan C-s, dapat dilepas dengan menggunakan C-q.
 Btw fitur ini namanya [Software Flow Control](https://en.wikipedia.org/wiki/Software_flow_control) ( buat yang sering program Serial mungkin ngerti) (coba penjet C-s di terminal ;) )
+```
