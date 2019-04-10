@@ -45,6 +45,9 @@ Untuk itu mungkin tombol dibawah ini berguna, huruf besar disini maksudnya pence
 |G	 |Maju ke akhir file (EOF)|
 |g	 |Mundur ke awal file (BOF)|
 |%	 |Buat programmer (bracket match)|
+|H	 |Mundur ke bagian paling atas layar|
+|M	 |Ke tengah layar|
+|L	 |Maju ke bagian paling bawah layar|
 
 Coba aja pencet-pencet setiap perintah diatas biar ngerti. Sampai situ saja untuk navigasi. Masih banyak cara mengefisiensi waktu editting file. Di tutorial selanjutnya akan dibahas cara menggunakan macros di Vim ;)
 
