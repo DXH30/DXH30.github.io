@@ -29,12 +29,12 @@ tombol perlu diingat kalau perlu sering-sering maen game roguelike, karena hampi
 
 Tapi mungkin yang biasa kita cari itu yang efisien untuk ngoding ya (yang diatas itu tombol navigasi standar).
 
-Untuk itu mungkin tombol dibawah ini berguna
+Untuk itu mungkin tombol dibawah ini berguna, huruf besar disini maksudnya pencet _shift_ dulu. Contoh: G itu sama dengan S-g
 
 | tombol | keterangan |
 |:-------|:-----------|
-|e	 |Maju        |
-|b	 |Mundur      |
+|e	 |Maju ke akhir kata       |
+|b	 |Mundur ke awal kata     |
 |w	 |Maju 1 kata |
 |$	 |Maju ke akhir (end) |
 |0	 |Mundur ke awal (home) |
