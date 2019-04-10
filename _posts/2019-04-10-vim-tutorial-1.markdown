@@ -4,7 +4,7 @@ Editor vim biasanya dapat ditemukan di Linux pada umumnya. Namun jika tidak dite
 ```console
 user@localhost:~$ vi namafile
 ```
-Coba keluar dari vim dengan cara mengketik colon(:) lalu q, btw <RET> disini maksudnya enter
+Coba keluar dari vim dengan cara mengketik colon(:) lalu q, btw \<RET\> disini maksudnya enter
 ```console
 :q <RET>
 ```
@@ -24,7 +24,7 @@ int main()
 }
 ```
 
-Untuk keluar dari mode INSERT ke mode NORMAL tekan <ESC>
+Untuk keluar dari mode INSERT ke mode NORMAL tekan \<ESC\>
 
 Setelah dalam mode NORMAL. Untuk menyimpan file. Ketikkan
 ```console
