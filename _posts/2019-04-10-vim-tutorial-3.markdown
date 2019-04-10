@@ -28,7 +28,7 @@ Artinya
 1. qw : mendefinisikan macro dengan nama w
 2. 0 : mengarahkan cursor ke awal baris
 3. i : mengubah menjadi INSERT mode
-4. - : mengetik strip dan spasi
+4. \- : mengetik strip dan spasi
 5. \<ESC\> : masuk ke NORMAL mode
 6. j : mengarahkan cursor ke baris selanjutnya
 7. q : mengakhiri recording macros
