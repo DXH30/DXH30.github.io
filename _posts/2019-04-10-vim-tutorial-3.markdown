@@ -163,4 +163,4 @@ Gimana ?
 
 Selamat anda sudah menjadi pengguna vim :D
 
-Mau yang lebih menantang, coba ke [vimgolf](https://www.vimgolf.com)
+Mau yang lebih menantang, coba ke [vimgolf](https://www.vimgolf.com){target="_blank"}
