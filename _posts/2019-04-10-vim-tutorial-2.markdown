@@ -29,7 +29,7 @@ tombol perlu diingat kalau perlu sering-sering maen game roguelike, karena hampi
 
 Tapi mungkin yang biasa kita cari itu yang efisien untuk ngoding ya (yang diatas itu tombol navigasi standar).
 
-Untuk itu dapat menggunakan b untuk balik dan e untuk maju ke karakter yang biasa jadi delimiter.
+Untuk itu mungkin tombol dibawah ini berguna
 
 | tombol | keterangan |
 |:-------|:-----------|
