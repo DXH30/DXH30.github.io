@@ -1,3 +1,6 @@
+---
+author: DXH30
+---
 ## Tutorial Vim 1 Basic Editing
 Editor vim biasanya dapat ditemukan di Linux pada umumnya. Namun jika tidak ditemukan dengan nama vim, dapat dibuka dengan perintah
 
