@@ -24,14 +24,16 @@ kita bisa buat macrosnya sederhana. Caranya, arahkan kursor ke huruf A di Ayam l
 ```vim
 qw0i- <ESC>jq 
 ```
-Artinya
-1. qw : mendefinisikan macro dengan nama w
-2. 0 : mengarahkan cursor ke awal baris
-3. i : mengubah menjadi INSERT mode
-4. \- : mengetik strip dan spasi
-5. \<ESC\> : masuk ke NORMAL mode
-6. j : mengarahkan cursor ke baris selanjutnya
-7. q : mengakhiri recording macros
+Keterangan
+| No | Perintah | Keterangan                              |
+|:---|----------|-----------------------------------------|
+| 1. | qw       | mendefinisikan macro dengan nama w      |
+| 2. | 0        | mengarahkan cursor ke awal baris        |
+| 3. | i        | mengubah menjadi INSERT mode            |
+| 4. | \-       | mengetik strip dan spasi                |
+| 5. | \<ESC\>  | masuk ke NORMAL mode                    |
+| 6. | j        | mengarahkan cursor ke baris selanjutnya |
+| 7. | q        | mengakhiri recording macros             |
 
 coba panggil dengan mengetikkan
 
