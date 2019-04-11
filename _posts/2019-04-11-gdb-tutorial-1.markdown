@@ -2,23 +2,23 @@ GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile p
 
 1. Buat program dengan nama hello.c
 
-```c
-#include <stdio.h>
+	```c
+	#include <stdio.h>
 
-int main() {
-	char *name;
-	printf("Insert name : ");
-	scanf("%s", &name);
-	printf("Hello %s\n", &name);
-	return 0;
-}
-```
+	int main() {
+		char *name;
+		printf("Insert name : ");
+		scanf("%s", &name);
+		printf("Hello %s\n", &name);
+		return 0;
+	}
+	```
 
 2. Save program lalu compile dengan menggunakan flag -g di gcc
 
-```console
-user@localhost:~$ gcc -g hello.c -o hello
-```
+	```console
+	user@localhost:~$ gcc -g hello.c -o hello
+	```
 
 3. Setelah itu debug programmnya dengan gdb
 
@@ -153,11 +153,11 @@ gs             0x0                 0
 
 15. Dari hasil keluaran perintah diatas, dapat diketahui isi dari rip nya adalah 0x555555555199, jadi kita continue lagi, terus start
 
-```
+```gdb
 (gdb) continue
 ```
 
-```
+```gdb
 (gdb) start
 ```
 
