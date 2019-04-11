@@ -25,6 +25,7 @@ kita bisa buat macrosnya sederhana. Caranya, arahkan kursor ke huruf A di Ayam l
 qw0i- <ESC>jq 
 ```
 Keterangan
+
 | No | Perintah | Keterangan                              |
 |:---|----------|-----------------------------------------|
 | 1. | qw       | mendefinisikan macro dengan nama w      |
