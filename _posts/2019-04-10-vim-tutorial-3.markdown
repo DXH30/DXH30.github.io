@@ -46,7 +46,8 @@ untuk memanggil macros berulang kali coba ketikkan
 ```
 
 Apa gunanya kita buat macro ?
-Membuat macros akan sangat membantu jika ada ribuan file yang harus di edit dengan format yang sama. Contoh, terdapat source :
+Membuat macros akan sangat membantu jika ada ribuan baris yang harus di edit dengan format yang sama.
+Berikut ini adalah contohnya, terdapat source :
 
 ```html
 Satu
@@ -61,7 +62,7 @@ Sembilan
 Sepuluh
 ```
 
-Mau kita buat dalam bentuk seperti ini (hasil akhirnya seperti ini):
+Dengan macros kita bisa membuat teks sebelumnya menjadi seperti ini :
 
 ```html
 <ol>
@@ -79,7 +80,7 @@ Mau kita buat dalam bentuk seperti ini (hasil akhirnya seperti ini):
 </ol>
 ```
 
-Sebelum menggunakan macro kita buat dulu lingkungan awal dan bisa dimanfaatkan
+Sebelum menggunakan macro kita buat dulu kondisi awal dan bisa dimanfaatkan
 
 ```html
 1
@@ -97,44 +98,45 @@ Sepuluh
 <ol>
 ```
 
-Untuk menggunakan macro kita ketikkan perintah qa dimana q adalah perintah untuk record macro dan a adalah nama macro yang kita buat, setelah itu akan muncul tanda **recording @a**. Jangan takut, santai aja.
-
-Arahin kursornya ke huruf S di Satu, terus coba ikutin pencetan ini, percaya aja ikutin satu satu
+Arahkan kursornya ke huruf S di Satu, terus coba ikutin pencetan ini, percaya aja ikutin satu satu
 
 ```vim
 qa0"bywi<li name=" <ESC>h"bpbg~lea" value="<ESC>gg"cyw<C-a>``"cpa"><ESC>ldl$a</li><ESC>jq
 ```
 Keterangan:
-1. qa : mendefinisikan macros dengan nama a 
-2. 0 : navigasi ke awal baris
-3. "byw : menyimpan (yank) dari cursor saat ini sampai w (akhir kata) ke register b
-4. i : pindah ke INSERT mode
-5. \<li name=" : ini isinya
-6. \<ESC\> : pindah ke NORMAL mode
-7. h : ke kiri 1 kali 
-8. "bp : mempaste dari register b
-9. b : ke awal kata
-10. g~l : toggle case ke kanan 1 kali
-11. e : pindah ke akhir kata 
-12. a : pindah ke INSERT mode depan cursor (sebut saja append)
-13. " value=" : ini isinya
-14. \<ESC\> : pindah ke NORMAL mode
-15. gg : pergi ke awal file (BOF)
-16. "cyw : yank 1 kata ke register c
-17. \<C-a\> : nambahin angkanya
-18. \`\` : pergi ke titik yang terakhir diedit
-19. "cp : paste dari register c
-20. a : append
-21. "\> : ini isinya
-22. \<ESC\> : pindah ke NORMAL mode
-23. l : ke kanan 1 kali
-24. dl : hapus 1 char ke kanan
-25. $ : pindah ke akhir baris
-26. a : append
-27. \</li\> : ini isinya
-28. \<ESC\> : pindah ke NORMAL mode
-29. j : ke bawah 1 baris
-30. q : sudahi rekaman macros nya 
+
+| No  | Perintah    | Keterangan                                                                |
+|:----|-------------|---------------------------------------------------------------------------|
+| 1.  | qa          | mendefinisikan macros dengan nama a                                       |
+| 2.  | 0           | navigasi ke awal baris                                                    |
+| 3.  | "byw        | menyimpan (yank) dari cursor saat ini sampai w (akhir kata) ke register b |
+| 4.  | i           | pindah ke INSERT mode                                                     |
+| 5.  | \<li name=" | ini isinya                                                                |
+| 6.  | \<ESC\>     | pindah ke NORMAL mode                                                     |
+| 7.  | h           | ke kiri 1 kali                                                            |
+| 8.  | "bp         | mempaste dari register b                                                  |
+| 9.  | b           | ke awal kata                                                              |
+| 10. | g~l         | toggle case ke kanan 1 kali                                               |
+| 11. | e           | pindah ke akhir kata                                                      |
+| 12. | a           | pindah ke INSERT mode depan cursor (sebut saja append)                    |
+| 13. | " value="   | ini isinya                                                                |
+| 14. | \<ESC\>     | pindah ke NORMAL mode                                                     |
+| 15. | gg          | pergi ke awal file (BOF)                                                  |
+| 16. | "cyw        | yank 1 kata ke register c                                                 |
+| 17. | \<C-a\>     | nambahin angkanya                                                         |
+| 18. | \`\`        | pergi ke titik yang terakhir diedit                                       |
+| 19. | "cp         | paste dari register c                                                     |
+| 20. | a           | append                                                                    |
+| 21. | "\>         | ini isinya                                                                |
+| 22. | \<ESC\>     | pindah ke NORMAL mode                                                     |
+| 23. | l           | ke kanan 1 kali                                                           |
+| 24. | dl          | hapus 1 char ke kanan                                                     |
+| 25. | $           | pindah ke akhir baris                                                     |
+| 26. | a           | append                                                                    |
+| 27. | \</li\>     | ini isinya                                                                |
+| 28. | \<ESC\>     | pindah ke NORMAL mode                                                     |
+| 29. | j           | ke bawah 1 baris                                                          |
+| 30. | q           | sudahi rekaman macros nya                                                 |
 
 Gimana, jelas ? gampang kan ?
 

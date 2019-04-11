@@ -20,10 +20,10 @@ untuk memanfaatkan keyboard sepenuhnya (pure keyboard) navigasi di vim sama sepe
 
 | tombol | keterangan |
 |:-------|:-----------|
-|h	 |kanan	      |
-|j	 |bawah	      |
-|k	 |atas	      |
-|l	 |kiri	      |
+| h      | kanan      |
+| j      | bawah      |
+| k      | atas       |
+| l      | kiri       |
 
 tombol perlu diingat kalau perlu sering-sering maen game roguelike, karena hampir semua navigasi tanpa tombol kursor mengandalkan kursor diatas. Hal ini juga penting biar tangan gak nyasar kalau pakai tombol kursor
 
@@ -31,23 +31,23 @@ Tapi mungkin yang biasa kita cari itu yang efisien untuk ngoding ya (yang diatas
 
 Untuk itu mungkin tombol dibawah ini berguna, huruf besar disini maksudnya pencet _shift_ dulu. Contoh: G itu sama dengan S-g
 
-| tombol | keterangan |
-|:-------|:-----------|
-|e	 |Maju ke akhir kata       |
-|b	 |Mundur ke awal kata     |
-|w	 |Maju 1 kata |
-|$	 |Maju ke akhir (end) |
-|0	 |Mundur ke awal (home) |
-|)	 |Maju 1 kalimat |
-|(	 |Mundur 1 kalimat |
-|}	 |Maju 1 paragraf |
-|{	 |Mundur 1 paragraf|
-|G	 |Maju ke akhir file (EOF)|
-|g	 |Mundur ke awal file (BOF)|
-|%	 |Buat programmer (bracket match)|
-|H	 |Mundur ke bagian paling atas layar|
-|M	 |Ke tengah layar|
-|L	 |Maju ke bagian paling bawah layar|
+| tombol | keterangan                         |
+|:-------|:-----------------------------------|
+| e      | Maju ke akhir kata                 |
+| b      | Mundur ke awal kata                |
+| w      | Maju 1 kata                        |
+| $      | Maju ke akhir (end)                |
+| 0      | Mundur ke awal (home)              |
+| )      | Maju 1 kalimat                     |
+| (      | Mundur 1 kalimat                   |
+| }      | Maju 1 paragraf                    |
+| {      | Mundur 1 paragraf                  |
+| G      | Maju ke akhir file (EOF)           |
+| g      | Mundur ke awal file (BOF)          |
+| %      | Buat programmer (bracket match)    |
+| H      | Mundur ke bagian paling atas layar |
+| M      | Ke tengah layar                    |
+| L      | Maju ke bagian paling bawah layar  |
 
 Coba aja pencet-pencet setiap perintah diatas biar ngerti. Sampai situ saja untuk navigasi. Masih banyak cara mengefisiensi waktu editting file. Di tutorial selanjutnya akan dibahas cara menggunakan macros di Vim ;)
 
