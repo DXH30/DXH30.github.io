@@ -16,7 +16,7 @@ Kita mau buat menjadi
 - Ayam
 - Kambing
 - Kelinci
-- Kerbai
+- Kerbau
 ```
 
 kita bisa buat macrosnya sederhana. Caranya, arahkan kursor ke huruf A di Ayam lalu ketikkan (langsung ketikkan, jangan pencet i) di NORMAL mode
