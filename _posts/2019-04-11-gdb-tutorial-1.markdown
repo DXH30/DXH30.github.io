@@ -1,62 +1,62 @@
 GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya
 
-1. Buat program dengan nama hello.c
+Buat program dengan nama hello.c
 
-	```c
-	#include <stdio.h>
+```c
+#include <stdio.h>
 
-	int main() {
-		char *name;
-		printf("Insert name : ");
-		scanf("%s", &name);
-		printf("Hello %s\n", &name);
-		return 0;
-	}
-	```
+int main() {
+	char *name;
+	printf("Insert name : ");
+	scanf("%s", &name);
+	printf("Hello %s\n", &name);
+	return 0;
+}
+```
 
-2. Save program lalu compile dengan menggunakan flag -g di gcc
+Save program lalu compile dengan menggunakan flag -g di gcc
 
-	```console
-	user@localhost:~$ gcc -g hello.c -o hello
-	```
+```console
+user@localhost:~$ gcc -g hello.c -o hello
+```
 
-3. Setelah itu debug programmnya dengan gdb
+Setelah itu debug programmnya dengan gdb
 
 ```console
 user@localhost:~$ gdb ./hello
 ```
 
-4. Untuk menjalankan program ketikkan run
+Untuk menjalankan program ketikkan run
 
 ```gdb
 (gdb) run
 ```
 
-5. Agar bisa di debug programmnya ketikkan start, dimana perintah ini melakukan debug dengan breakpoint di fungsi main
+Agar bisa di debug programmnya ketikkan start, dimana perintah ini melakukan debug dengan breakpoint di fungsi main
 
 ```gdb
 (gdb) start
 ```
 
-6. Untuk melihat isi program, gunakan perintah
+Untuk melihat isi program, gunakan perintah
 
 ```gdb
 (gdb) list
 ```
 
-7. Untuk melihat isi register saat ini, gunakan perintah
+Untuk melihat isi register saat ini, gunakan perintah
 
 ```gdb
 (gdb) info registers
 ```
 
-8. Coba lanjutkan program, dengan ketikkan
+Coba lanjutkan program, dengan ketikkan
 
 ```gdb
 (gdb) continue
 ```
 
-9. Maka program akan langsung berlanjut sampai selesai, coba start ulang program, dan ikuti perintah berikut
+Maka program akan langsung berlanjut sampai selesai, coba start ulang program, dan ikuti perintah berikut
 
 ```gdb
 (gdb) start
@@ -74,25 +74,25 @@ user@localhost:~$ gdb ./hello
 (gdb) info reg
 ```
 
-10. Bisa dilihat perbedaan, di register rip, saat dilanjutkan alamatnya berubah, disini rip maksudnya adalah INSTRUCTION POINTER, atau bahasa gampangnya PROGRAM COUNTER. Untuk melihat isi dari alamat memori dapat menggunakan perintah x (Examine Memory), disini saya ngeprint alamat dari Register rip.
+Bisa dilihat perbedaan, di register rip, saat dilanjutkan alamatnya berubah, disini rip maksudnya adalah INSTRUCTION POINTER, atau bahasa gampangnya PROGRAM COUNTER. Untuk melihat isi dari alamat memori dapat menggunakan perintah x (Examine Memory), disini saya ngeprint alamat dari Register rip.
 
 ```gdb
 (gdb) x 0x555555555161
 ```
 
-11. Untuk melihat kedepan memory, ketikkan perintah x/4 untuk 4 byte kedepan memori
+Untuk melihat kedepan memory, ketikkan perintah x/4 untuk 4 byte kedepan memori
 
 ```gdb
 (gdb) x/4 0x555555555161
 ```
 
-12. Untuk melihat kebelakang memory, ketikkan perintah x/-4 untuk 4 byte kebelakang memori
+Untuk melihat kebelakang memory, ketikkan perintah x/-4 untuk 4 byte kebelakang memori
 
 ```gdb
 (gdb) x/-4 0x555555555161
 ```
 
-13. Disini kita coba loncatin printf dan scanf yang pertama, kita lihat apa yang terjadi
+Disini kita coba loncatin printf dan scanf yang pertama, kita lihat apa yang terjadi
 
 ```gdb
 (gdb) continue
@@ -122,7 +122,7 @@ Insert Name : ABC
 (gdb) info registers
 ```
 
-14. Lihat rip nya dimana
+Lihat rip nya dimana
 
 ```gdb
 rax            0x1                 1
@@ -151,7 +151,7 @@ fs             0x0                 0
 gs             0x0                 0
 ```
 
-15. Dari hasil keluaran perintah diatas, dapat diketahui isi dari rip nya adalah 0x555555555199, jadi kita continue lagi, terus start
+Dari hasil keluaran perintah diatas, dapat diketahui isi dari rip nya adalah 0x555555555199, jadi kita continue lagi, terus start
 
 ```gdb
 (gdb) continue
@@ -161,25 +161,25 @@ gs             0x0                 0
 (gdb) start
 ```
 
-16. Kita coba ganti konten rip dengan cara (disini tanda $ menandakan register)
+Kita coba ganti konten rip dengan cara (disini tanda $ menandakan register)
 
 ```gdb
 (gdb) set $rip=0x555555555199
 ```
 
-17. Coba dilihat yang sudah kita ganti, dengan cara
+Coba dilihat yang sudah kita ganti, dengan cara
 
 ```gdb
 (gdb) info registers
 ```
 
-18. Dapat dilihat rip nya berubah menjadi 0x555555555199, coba next
+Dapat dilihat rip nya berubah menjadi 0x555555555199, coba next
 
 ```gdb
 (gdb) next
 ```
 
-19. Maka akan muncul
+Maka akan muncul
 
 ```gdb
 Hello �����
