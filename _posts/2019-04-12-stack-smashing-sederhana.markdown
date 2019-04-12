@@ -26,30 +26,7 @@ user@localhost:~# exit
 user@localhost:~$
 ```
 
-Disini kita bisa langsung coba dengan memanfaatkan binary oke untuk memperoleh shell dengan menginputkan data ke buffer sebanyak 80 kali diiringi dengan perintah yang kita ingin coba buat
-
-```console
-user@localhost:~$ chmod +x oke
-user@localhost:~$ ./oke
-Berikut ini adalah programnya
-```
-
-Coba jalankan programnya dan masukkan inputan A 80, 100, 200, sampai 300 kali, dan terus tambah sampai core dumped
-
-```console
-user@localhost:~$ ./oke
-Berikut ini adalah programnya
-int main(int argc, char *argv[]) {
-	printf("Berikut ini adalah programnya\n");
-	char buf[80];
-	int c;
-	c = read(0, buf, BATASAN);
-	printf("Terbaca %d, isinya : %s\n", c, buf);
-	return 0;
-}
-```
-
-Dari kode diatas dapat dilihat batasan kita masukin nilai c nya adalah 500, sehingga ketika kita menginputkan buf lebih dari 80, yang 520 nya kemana ? coba kita compile, dan lihat apa yang terjadi (Matikan dulu stack protectornya dan ASLR), dengan mengikuti perintah berikut ini :
+Dari kode diatas dapat dilihat batasan kita masukin nilai c nya adalah 500, sehingga ketika kita menginputkan buf lebih dari 80, yang 420 nya kemana ? coba kita compile, dan lihat apa yang terjadi (Matikan dulu stack protectornya dan ASLR), dengan mengikuti perintah berikut ini :
 
 ```console
 user@localhost:~$ gcc -g -fno-stack-protector -z execstack oke.c -o oke
@@ -58,14 +35,6 @@ user@localhost:~$ sudo su
 user@localhost:~# echo 0 > /proc/sys/kernel/randomize_va_space
 user@localhost:~# exit
 user@localhost:~$
-```
-
-Disini kita bisa langsung coba dengan memanfaatkan binary oke untuk memperoleh shell dengan menginputkan data ke buffer sebanyak 80 kali diiringi dengan perintah yang kita ingin coba buat
-
-```console
-user@localhost:~$ chmod +x oke
-user@localhost:~$ ./oke
-Berikut ini adalah programnya
 ```
 
 Untuk memastikan stack protector mati. Coba jalankan programnya dan masukkan inputan A 80, 100, 200, sampai 300 kali, dan terus tambah sampai core dumped. Abaikan karakter aneh di paling kanan. Ini juga merupakan cara untuk mengetahui byte offset sebelum Terjadi segmentation fault. Dalam case ini saya dapati byte offsetnya ada di byte ke 104, karena pada byte 105 dia Segmentation Fault (Dengan cara coba-coba :D).
