@@ -4,6 +4,18 @@
 
 layout: default
 ---
+{% include head.html %}
+{% terminal %}
+$ whoami
+DXH30
+$ date
+{{ site.time | date: '%A %B %H:%M:%S %Z %Y' }}
+$ echo "Hello World!"
+Hello World!
+$ _
+{% endterminal %}
+
+# Posts
 <ul>
   {% for post in site.posts %}
     <li>
