@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Lambda Calculus Ep 1"
+author: Didik
+categories: jekyll update
+---
+
 Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut **Variabel**, **Abstraksi**, dan **Aplikasi**.
 
 | Syntax | Nama      | Deskripsi                              |
@@ -65,3 +72,4 @@ Sehingga masuk akal jika kita buat dengan notasi berikut
 ```
 
 Oke untuk pendahuluan Lambda singkatnya seperti itu, mungkin tutorial selanjutnya, akan diperjelas
+{% include disqus.html %}

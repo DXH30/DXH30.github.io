@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Vim bagian 3"
+author: Didik
+categories: jekyll update
+---
+
 ## Tutorial Vim 3 Macros
 Untuk yang belum tau macros itu apa ? Nih link [wikipedia](https://en.wikipedia.org/wiki/Macro_(computer_science))
 Gimana cara pakai nya di vim ?
@@ -169,3 +176,4 @@ Gimana ?
 Selamat anda sudah menjadi pengguna vim :D
 
 Mau yang lebih menantang, coba ke [vimgolf](https://www.vimgolf.com){target="_blank"}
+{% include disqus.html %}

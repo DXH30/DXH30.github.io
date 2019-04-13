@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Tutorial GDB 1 | DXH30</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Tutorial GDB 1" />
+<meta name="author" content="Didik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya" />
+<meta property="og:description" content="GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html" />
+<meta property="og:site_name" content="DXH30" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-11T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya","datePublished":"2019-04-11T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html"},"@type":"BlogPosting","author":{"@type":"Person","name":"Didik"},"url":"http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html","headline":"Tutorial GDB 1","dateModified":"2019-04-11T00:00:00+08:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>DXH30</h1>
+        <h2>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>11 April 2019</small>
+<h1>Tutorial GDB 1</h1>
+
+<p class="view">by Didik</p>
+
+<p>GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya</p>
+
+<ol>
+  <li>
+    <p>Buat program dengan nama hello.c</p>
+
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#include &lt;stdio.h&gt;
+</span>
+ <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+     <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+     <span class="n">printf</span><span class="p">(</span><span class="s">"Insert name : "</span><span class="p">);</span>
+     <span class="n">scanf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">);</span>
+     <span class="n">printf</span><span class="p">(</span><span class="s">"Hello %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">name</span><span class="p">);</span>
+     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Save program lalu compile dengan menggunakan flag -g di gcc</p>
+
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> user@localhost:~$</span> gcc <span class="nt">-g</span> hello.c <span class="nt">-o</span> hello
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Setelah itu debug programmnya dengan gdb</p>
+
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> user@localhost:~$</span> gdb ./hello
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Untuk menjalankan program ketikkan run</p>
+
+    <pre><code class="language-gdb"> (gdb) run
+</code></pre>
+  </li>
+  <li>
+    <p>Agar bisa di debug programmnya ketikkan start, dimana perintah ini melakukan debug dengan breakpoint di fungsi main</p>
+
+    <pre><code class="language-gdb"> (gdb) start
+</code></pre>
+  </li>
+  <li>
+    <p>Untuk melihat isi program, gunakan perintah</p>
+
+    <pre><code class="language-gdb"> (gdb) list
+</code></pre>
+  </li>
+  <li>
+    <p>Untuk melihat isi register saat ini, gunakan perintah</p>
+
+    <pre><code class="language-gdb"> (gdb) info registers
+</code></pre>
+  </li>
+  <li>
+    <p>Coba lanjutkan program, dengan ketikkan</p>
+
+    <pre><code class="language-gdb"> (gdb) continue
+</code></pre>
+  </li>
+  <li>
+    <p>Maka program akan langsung berlanjut sampai selesai, coba start ulang program, dan ikuti perintah berikut</p>
+
+    <pre><code class="language-gdb"> (gdb) start
+</code></pre>
+
+    <pre><code class="language-gdb"> (gdb) info registers
+</code></pre>
+
+    <pre><code class="language-gdb"> (gdb) next
+</code></pre>
+
+    <pre><code class="language-gdb"> (gdb) info reg
+</code></pre>
+  </li>
+  <li>
+    <p>Bisa dilihat perbedaan, di register rip, saat dilanjutkan alamatnya berubah, disini rip maksudnya adalah INSTRUCTION POINTER, atau bahasa gampangnya PROGRAM COUNTER. Untuk melihat isi dari alamat memori dapat menggunakan perintah x (Examine Memory), disini saya ngeprint alamat dari Register rip.</p>
+
+    <pre><code class="language-gdb">(gdb) x 0x555555555161
+</code></pre>
+  </li>
+  <li>
+    <p>Untuk melihat kedepan memory, ketikkan perintah x/4 untuk 4 byte kedepan memori</p>
+
+    <pre><code class="language-gdb">(gdb) x/4 0x555555555161
+</code></pre>
+  </li>
+  <li>
+    <p>Untuk melihat kebelakang memory, ketikkan perintah x/-4 untuk 4 byte kebelakang memori</p>
+
+    <pre><code class="language-gdb">(gdb) x/-4 0x555555555161
+</code></pre>
+  </li>
+  <li>
+    <p>Disini kita coba loncatin printf dan scanf yang pertama, kita lihat apa yang terjadi</p>
+
+    <pre><code class="language-gdb">(gdb) continue
+</code></pre>
+
+    <pre><code class="language-gdb">(gdb) start
+</code></pre>
+
+    <pre><code class="language-gdb">(gdb) next
+</code></pre>
+
+    <pre><code class="language-gdb">(gdb) next
+</code></pre>
+
+    <pre><code class="language-gdb">(gdb) next
+</code></pre>
+
+    <pre><code class="language-gdb">Insert Name : ABC
+</code></pre>
+
+    <pre><code class="language-gdb">(gdb) info registers
+</code></pre>
+  </li>
+  <li>
+    <p>Lihat rip nya dimana</p>
+
+    <pre><code class="language-gdb">rax            0x1                 1
+rbx            0x0                 0
+rcx            0x7ffff7f203e0      140737353221088
+rdx            0x7ffff7f71730      140737353553712
+rsi            0x1                 1
+rdi            0x0                 0
+rbp            0x7fffffffd6b0      0x7fffffffd6b0
+rsp            0x7fffffffd6a0      0x7fffffffd6a0
+r8             0xa                 10
+r9             0x0                 0
+r10            0x0                 0
+r11            0x7ffff7f203e0      140737353221088
+r12            0x555555555060      93824992235616
+r13            0x7fffffffd790      140737488344976
+r14            0x0                 0
+r15            0x0                 0
+rip            0x555555555199      0x555555555199 &lt;main+64&gt;
+eflags         0x206               [ PF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+</code></pre>
+  </li>
+  <li>
+    <p>Dari hasil keluaran perintah diatas, dapat diketahui isi dari rip nya adalah 0x555555555199, jadi kita continue lagi, terus start</p>
+
+    <pre><code class="language-gdb">(gdb) continue
+</code></pre>
+
+    <pre><code class="language-gdb">(gdb) start
+</code></pre>
+  </li>
+  <li>
+    <p>Kita coba ganti konten rip dengan cara (disini tanda $ menandakan register)</p>
+
+    <pre><code class="language-gdb">(gdb) set $rip=0x555555555199
+</code></pre>
+  </li>
+  <li>
+    <p>Coba dilihat yang sudah kita ganti, dengan cara</p>
+
+    <pre><code class="language-gdb">(gdb) info registers
+</code></pre>
+  </li>
+  <li>
+    <p>Dapat dilihat rip nya berubah menjadi 0x555555555199, coba next</p>
+
+    <pre><code class="language-gdb">(gdb) next
+</code></pre>
+  </li>
+  <li>
+    <p>Maka akan muncul</p>
+
+    <pre><code class="language-gdb">Hello �����
+</code></pre>
+  </li>
+</ol>
+
+<p>Cukup itu untuk dasar-dasar gdb, kalau kurang ditunggu Tutorial selanjutnya. Pemahaman gdb sangat dibutuhkan untuk memulai CTF, karena bakal banyak kepake ilmunya</p>
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>

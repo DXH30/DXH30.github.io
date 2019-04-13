@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Vim Bagian 2"
+author: Didik
+categories: jekyll update
+---
+
 ## Tutorial Vim 2 Navigasi
 Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. 
 Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;)
@@ -53,3 +60,4 @@ Coba aja pencet-pencet setiap perintah diatas biar ngerti. Sampai situ saja untu
 
 ## Tips 
 Semua navigasi ini dilakukan pada mode NORMAL
+{% include disqus.html %}

@@ -7,3 +7,4 @@ categories: jekyll update
 Selamat datang di Blog ini
 
 Blog ini dibuat untuk writeUP CTF dan BattleCode
+{% include disqus.html %}

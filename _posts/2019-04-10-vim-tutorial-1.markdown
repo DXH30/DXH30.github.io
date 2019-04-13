@@ -1,6 +1,10 @@
 ---
-author: DXH30
+layout: post
+title:  "Vim Bagian 1"
+author: Didik
+categories: jekyll update
 ---
+
 ## Tutorial Vim 1 Basic Editing
 Editor vim biasanya dapat ditemukan di Linux pada umumnya. Namun jika tidak ditemukan dengan nama vim, dapat dibuka dengan perintah
 
@@ -59,3 +63,4 @@ Tips vim Hang :
 > Jika tidak sengaja menekan C-s, dapat dilepas dengan menggunakan C-q.
 > Btw fitur ini namanya [Software Flow Control](https://en.wikipedia.org/wiki/Software_flow_control) ( buat yang sering program Serial mungkin ngerti) (coba penjet C-s di terminal ;) )
 
+{% include disqus.html %}

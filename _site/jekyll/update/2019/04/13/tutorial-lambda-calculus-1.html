@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Lambda Calculus Ep 1 | DXH30</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Lambda Calculus Ep 1" />
+<meta name="author" content="Didik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut Variabel, Abstraksi, dan Aplikasi." />
+<meta property="og:description" content="Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut Variabel, Abstraksi, dan Aplikasi." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html" />
+<meta property="og:site_name" content="DXH30" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-13T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut Variabel, Abstraksi, dan Aplikasi.","datePublished":"2019-04-13T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html"},"@type":"BlogPosting","author":{"@type":"Person","name":"Didik"},"url":"http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html","headline":"Lambda Calculus Ep 1","dateModified":"2019-04-13T00:00:00+08:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>DXH30</h1>
+        <h2>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>13 April 2019</small>
+<h1>Lambda Calculus Ep 1</h1>
+
+<p class="view">by Didik</p>
+
+<p>Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut <strong>Variabel</strong>, <strong>Abstraksi</strong>, dan <strong>Aplikasi</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Syntax</th>
+      <th>Nama</th>
+      <th>Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">x</td>
+      <td>Variabel</td>
+      <td>Karakter atau kata yang memiliki nilai</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">(\x.M)</td>
+      <td>Abstraksi</td>
+      <td>Definisi Fungsi</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">(M N)</td>
+      <td>Aplikasi</td>
+      <td>Menerapkan fungsi</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Agar dapat memahami Lambda, berikut adalah penjelasan singkatnya. (Di Lambda Calculus tidak ada + - x /, disini hanya untuk kemudahan penjelasan)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">No</th>
+      <th>Matematika</th>
+      <th>Lambda</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td>f(x) = x</td>
+      <td>\x.x</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td>f(x) = x + 1</td>
+      <td>\x.x+1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td>f(x) = x^2 + 1</td>
+      <td>\x.x^2+1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td>f(x,y) = x^2 + y^2</td>
+      <td>\x.(\y.(x^2 + y^2))</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td>f(x,y,z) = x + y^2 + z^3</td>
+      <td>\x.(\y.(\z.(x + y^2 + z^3)))</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Di persamaan no 4 dan 5, kenapa f(x,y) = x^2 + y^2, menjadi \x.(\y.(x^2 + y^2)) ? Saya perjelas ya.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f(x, y) = x + y
+ini dapat dituliskan dalam bentuk
+
+f(x) = f(y) = x + y
+
+lah kok ? dapat darimana itu ? kasih contoh aja langsung
+x = 1, y = 2
+
+f(1) = f(2) = (1) + (2)
+
+maka hasilnya f(x) = 3, jika y juga terdefinisi
+
+mungkin akan lebih mudah dipahami kalau bentuknya dikurung seperti ini
+
+f(x) = (f(y) = x + y)
+
+atau mungkin karena ada 2 = (samadengan) jadi aneh, yaudah, coba bentuk ini
+
+f(x) = f(y)
+
+Perlu diketahui bahwa pada fungsi lambda setiap notasi fungsi tidak terdefinisi (anonymous function), jadi f pada f(x) berbeda dengan f pada f(y).
+
+Sehingga akan lebih mudah dipahami dalam bentuk seperti ini (f(y) diganti g(y))
+
+f(x) = g(y)
+
+dimana g(y) = x + y
+
+sehingga
+
+f(x) = x + y
+
+dan kita bisa mendefinisikan y pada g(y) dan x pada f(x), sehingga sama saja dengan
+
+f(x,y) = x + y
+
+f(x) = (g(y) = (x + y))
+
+Sehingga masuk akal jika kita buat dengan notasi berikut
+
+\x.(\y.(x + y))
+
+</code></pre></div></div>
+
+<p>Oke untuk pendahuluan Lambda singkatnya seperti itu, mungkin tutorial selanjutnya, akan diperjelas</p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>

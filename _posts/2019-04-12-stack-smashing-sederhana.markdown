@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Stack Smashing Sederhana"
+author: Didik
+categories: jekyll update
+---
+
 Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c
 
 ```c
@@ -135,3 +142,4 @@ Sumber bahasa inggris (lebih pro) [disini](https://blog.techorganic.com/2015/04/
 
 # Note
 Untuk tutorial bahasa inggris shellcodenya pada distro tertentu tidak dapat digunakan, bedanya shellcode disini menggunakan setuid(0) + execve("/bin/sh");
+{% include disqus.html %}

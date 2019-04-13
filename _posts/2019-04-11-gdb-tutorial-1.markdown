@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Tutorial GDB 1"
+author: Didik
+categories: jekyll update
+---
 GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya
 
 1. Buat program dengan nama hello.c

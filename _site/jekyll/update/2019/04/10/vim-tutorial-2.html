@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Vim Bagian 2 | DXH30</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Vim Bagian 2" />
+<meta name="author" content="Didik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tutorial Vim 2 Navigasi Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;) user@localhost:~$ vim hello.c" />
+<meta property="og:description" content="Tutorial Vim 2 Navigasi Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;) user@localhost:~$ vim hello.c" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html" />
+<meta property="og:site_name" content="DXH30" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-10T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"Tutorial Vim 2 Navigasi Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;) user@localhost:~$ vim hello.c","datePublished":"2019-04-10T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html"},"@type":"BlogPosting","author":{"@type":"Person","name":"Didik"},"url":"http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html","headline":"Vim Bagian 2","dateModified":"2019-04-10T00:00:00+08:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>DXH30</h1>
+        <h2>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>10 April 2019</small>
+<h1>Vim Bagian 2</h1>
+
+<p class="view">by Didik</p>
+
+<h2 id="tutorial-vim-2-navigasi">Tutorial Vim 2 Navigasi</h2>
+<p>Untuk memanfaatkan navigasi di Vim coba buka file hello.c tadi atau file yang lain. 
+Disini saya mulai pakai Vim, untuk cara install vim dapat dilihat di distro masing-masing ;)</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">user@localhost:~$</span> vim hello.c 
+</code></pre></div></div>
+
+<p>Isinya :</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello World!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>untuk memanfaatkan keyboard sepenuhnya (pure keyboard) navigasi di vim sama seperti navigasi standard buat yang sering maen game Rogue (contoh : StoneSoup). yakni</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">tombol</th>
+      <th style="text-align: left">keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">h</td>
+      <td style="text-align: left">kanan</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">j</td>
+      <td style="text-align: left">bawah</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">k</td>
+      <td style="text-align: left">atas</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">l</td>
+      <td style="text-align: left">kiri</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>tombol perlu diingat kalau perlu sering-sering maen game roguelike, karena hampir semua navigasi tanpa tombol kursor mengandalkan kursor diatas. Hal ini juga penting biar tangan gak nyasar kalau pakai tombol kursor</p>
+
+<p>Tapi mungkin yang biasa kita cari itu yang efisien untuk ngoding ya (yang diatas itu tombol navigasi standar).</p>
+
+<p>Untuk itu mungkin tombol dibawah ini berguna, huruf besar disini maksudnya pencet <em>shift</em> dulu. Contoh: G itu sama dengan S-g</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">tombol</th>
+      <th style="text-align: left">keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">e</td>
+      <td style="text-align: left">Maju ke akhir kata</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">b</td>
+      <td style="text-align: left">Mundur ke awal kata</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">w</td>
+      <td style="text-align: left">Maju 1 kata</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">$</td>
+      <td style="text-align: left">Maju ke akhir (end)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">Mundur ke awal (home)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">)</td>
+      <td style="text-align: left">Maju 1 kalimat</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">(</td>
+      <td style="text-align: left">Mundur 1 kalimat</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">}</td>
+      <td style="text-align: left">Maju 1 paragraf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">{</td>
+      <td style="text-align: left">Mundur 1 paragraf</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">G</td>
+      <td style="text-align: left">Maju ke akhir file (EOF)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">g</td>
+      <td style="text-align: left">Mundur ke awal file (BOF)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">%</td>
+      <td style="text-align: left">Buat programmer (bracket match)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">H</td>
+      <td style="text-align: left">Mundur ke bagian paling atas layar</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">M</td>
+      <td style="text-align: left">Ke tengah layar</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">L</td>
+      <td style="text-align: left">Maju ke bagian paling bawah layar</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Coba aja pencet-pencet setiap perintah diatas biar ngerti. Sampai situ saja untuk navigasi. Masih banyak cara mengefisiensi waktu editting file. Di tutorial selanjutnya akan dibahas cara menggunakan macros di Vim ;)</p>
+
+<h2 id="tips">Tips</h2>
+<p>Semua navigasi ini dilakukan pada mode NORMAL</p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://blog-dxh30-tech-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
