@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-14T02:47:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DXH30</title><subtitle>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</subtitle><entry><title type="html">Lambda Calculus Ep 1</title><link href="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html" rel="alternate" type="text/html" title="Lambda Calculus Ep 1" /><published>2019-04-13T00:00:00+08:00</published><updated>2019-04-13T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html">&lt;p&gt;Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut &lt;strong&gt;Variabel&lt;/strong&gt;, &lt;strong&gt;Abstraksi&lt;/strong&gt;, dan &lt;strong&gt;Aplikasi&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-15T01:43:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">DXH30</title><subtitle>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</subtitle><entry><title type="html">Android is Useful Bag 1</title><link href="http://localhost:4000/jekyll/update/2019/04/14/android-berguna-bag-1.html" rel="alternate" type="text/html" title="Android is Useful Bag 1" /><published>2019-04-14T00:00:00+08:00</published><updated>2019-04-14T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/14/android-berguna-bag-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/14/android-berguna-bag-1.html">&lt;p&gt;Aplikasi Android yang berfaedah&lt;/p&gt;
+
+&lt;h1 id=&quot;termux&quot;&gt;Termux&lt;/h1&gt;
+
+&lt;p&gt;Termux merupakan aplikasi virtual linux environment dalam android yang dapat digunakan untuk menjalankan program linux, maupun melakukan pemrograman.
+Fitur :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Tanpa root&lt;/li&gt;
+  &lt;li&gt;Untuk root virtual bisa pakai proot&lt;/li&gt;
+  &lt;li&gt;Bisa install Vim atau Emacs&lt;/li&gt;
+  &lt;li&gt;pkg = apt, if you know what I mean&lt;/li&gt;
+  &lt;li&gt;ssh server (portnya dikasih 8022)&lt;/li&gt;
+  &lt;li&gt;Direct access to com.* untuk menjalankan service Android seperti FrontCAM dll&lt;/li&gt;
+  &lt;li&gt;Di close masih jalan service nya (biasanya)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Penting untuk install ini, kalau mau hacking, atau CTF :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Metasploit Framework (Exploit)&lt;/li&gt;
+  &lt;li&gt;SQLMap (Buat SQLi)&lt;/li&gt;
+  &lt;li&gt;Redare2 (Buat Reverse Engineering)&lt;/li&gt;
+  &lt;li&gt;GDB (Buat Debugging)&lt;/li&gt;
+  &lt;li&gt;Gnu-ToolChain (isinya compiler dan lain-lain)&lt;/li&gt;
+  &lt;li&gt;OpenSSH (Install dulu kalau belum)&lt;/li&gt;
+  &lt;li&gt;Compiler, Interpreter, buat main proglang mu. (Ex: python, perl, gcc, javac, ghci)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;x-plore&quot;&gt;X-Plore&lt;/h1&gt;
+
+&lt;p&gt;Merupakan File Manager yang sudah ada sejak Jaman Symbian, yang lumayan terkenal bagi Developer dan Programmer saat itu. Merupakan software yang dibuat oleh &lt;strong&gt;Lonely cat Games&lt;/strong&gt;. Fiturnya :&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;SSH/SFTP Client&lt;/li&gt;
+  &lt;li&gt;FTP Client&lt;/li&gt;
+  &lt;li&gt;Cloud Storage Client&lt;/li&gt;
+  &lt;li&gt;WiFi Sharing Server (Via HTTP)&lt;/li&gt;
+  &lt;li&gt;SMB Client (LAN Sharing Server)&lt;/li&gt;
+  &lt;li&gt;DLNA&lt;/li&gt;
+  &lt;li&gt;Vault (Sembunyikan file)&lt;/li&gt;
+  &lt;li&gt;Terminal Emulator (Untuk SSH/SFTP atau HP yang di root)&lt;/li&gt;
+  &lt;li&gt;Remount FileSystem as Root&lt;/li&gt;
+  &lt;li&gt;Hexeditor&lt;/li&gt;
+  &lt;li&gt;BuiltIn TextEditor&lt;/li&gt;
+  &lt;li&gt;BuiltIn PDF-Reader&lt;/li&gt;
+  &lt;li&gt;BuiltIn Music-Player&lt;/li&gt;
+  &lt;li&gt;BuiltIn Video-Player&lt;/li&gt;
+  &lt;li&gt;BuiltIn Picture-Viewer&lt;/li&gt;
+  &lt;li&gt;MetaData Viewer&lt;/li&gt;
+  &lt;li&gt;MP3 Tag Edit&lt;/li&gt;
+  &lt;li&gt;NO ADS&lt;/li&gt;
+  &lt;li&gt;DONATE untuk dapat fitur yang banyak&lt;/li&gt;
+  &lt;li&gt;Jauh Lebih Ringan daripada FileManager yang lain&lt;/li&gt;
+  &lt;li&gt;Sudah lebih dulu ada ketimbang File Manager yang lain (Zaman Symbian, sudah ada Hexeditor nya)&lt;/li&gt;
+  &lt;li&gt;Worth for Real Programmer&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;remote-keyboard-tidak-ada-di-playstore&quot;&gt;Remote Keyboard (Tidak ada di Playstore)&lt;/h1&gt;
+
+&lt;p&gt;Ini bisa jadi remote keyboard lewat Telnet. (Cocok buat yang gak punya Bluetooth keyboard buat android bisa pakai ini jadi keyboardnya)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.onyxbits.de/remotekeyboard&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;root&quot;&gt;Root&lt;/h1&gt;
+
+&lt;p&gt;Root hp kalau serius, cari &lt;a href=&quot;https://www.google.com&quot;&gt;disini&lt;/a&gt; cara rootnya, good luck.&lt;/p&gt;</content><author><name>Didik</name></author><summary type="html">Aplikasi Android yang berfaedah</summary></entry><entry><title type="html">Lambda Calculus Ep 1</title><link href="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html" rel="alternate" type="text/html" title="Lambda Calculus Ep 1" /><published>2019-04-13T00:00:00+08:00</published><updated>2019-04-13T00:00:00+08:00</updated><id>http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html">&lt;p&gt;Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut &lt;strong&gt;Variabel&lt;/strong&gt;, &lt;strong&gt;Abstraksi&lt;/strong&gt;, dan &lt;strong&gt;Aplikasi&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
