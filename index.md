@@ -4,8 +4,6 @@
 
 layout: default
 ---
-{% include head.html %}
-
 # Posts
 <ul>
   {% for post in site.posts %}
