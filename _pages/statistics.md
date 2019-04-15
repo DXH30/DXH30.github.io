@@ -6,7 +6,7 @@ layout: page
 
 # Coding Statistics
 <center>
-<a href="https://wakatime.com"><img src="https://wakatime.com/share/@0624b180-6f42-4a91-8f0b-775b00cdbd6c/5d3fedfb-6c7a-4f69-9b04-7e5cb50f8687.png" /></a>
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@0624b180-6f42-4a91-8f0b-775b00cdbd6c/df16e530-8e0d-41ce-9a30-d344a10b9507.png" /></a>
 </center>
 
 # Programming Language Preferences
