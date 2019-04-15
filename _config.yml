@@ -33,6 +33,7 @@ gems:
 terminal:
   tag-name: 'h3'
   continuation_string: '/'
+include: ['_pages']
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -8,7 +8,7 @@
 		
 			
 			<item>
-				<title>Tutorial Gdb Bag 2</title>
+				<title>Tutorial GDB 2</title>
 				<description>&lt;p&gt;Tutorial GDB kali ini hanya membahas tampilan interaktif menggunakan GDB, yang saya baru tau dari yutub. Langsung saja, buat program sederhana&lt;/p&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#define APPNAME &quot;bufaddr.c&quot;
@@ -55,19 +55,8 @@
 &lt;p&gt;disitu sudah kelihatan kalau instruction pointer dan instruksi nya berlanjut ke perintah berikutnya. Untuk melihat disasembler nya, ketik C-x 2 lagi. Buat balik, ketik C-x 2 lagi sekali. ok&lt;/p&gt;
 </description>
 				<pubDate>Mon, 15 Apr 2019 00:00:00 +0800</pubDate>
-				<link>http://localhost:4000/2019/04/15/tutorial-gdb-bag-2.html</link>
-				<guid isPermaLink="true">http://localhost:4000/2019/04/15/tutorial-gdb-bag-2.html</guid>
-			</item>
-			
-		
-			
-			<item>
-				<title>Tutorial Gdb Bag 2</title>
-				<description>/bin/bash: markdown: command not found
-</description>
-				<pubDate>Mon, 15 Apr 2019 00:00:00 +0800</pubDate>
-				<link>http://localhost:4000/2019/04/15/tutorial-gdb-bag-2.html</link>
-				<guid isPermaLink="true">http://localhost:4000/2019/04/15/tutorial-gdb-bag-2.html</guid>
+				<link>http://localhost:4000/jekyll/update/2019/04/15/tutorial-gdb-bag-2.html</link>
+				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/15/tutorial-gdb-bag-2.html</guid>
 			</item>
 			
 		

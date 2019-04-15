@@ -16,4 +16,13 @@ layout: default
   {% endfor %}
 </ul>
 
+# Pages
+<table width="100%">
+<tr>
+ {% for page in site.pages %}
+ <td align="center"><a href="{{ page.url }}">{{ page.title }}</a></td>
+ {% endfor %}
+</tr>
+</table>
+
 {% include disqus.html %}
