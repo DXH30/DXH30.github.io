@@ -5,6 +5,7 @@
 layout: default
 ---
 # Posts
+{% feed_meta %}
 <ul>
   {% for post in site.posts %}
     <li>
