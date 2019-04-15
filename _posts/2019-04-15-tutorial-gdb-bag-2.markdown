@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Tutorial GDB 2"
+author: Didik
+categories: jekyll update
+---
+
 Tutorial GDB kali ini hanya membahas tampilan interaktif menggunakan GDB, yang saya baru tau dari yutub. Langsung saja, buat program sederhana
 
 
