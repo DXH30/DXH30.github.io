@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title></title>
-		<description>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</description>		
+		<title> - Articles</title>
+		<description>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</description>
 		<link>http://localhost:4000</link>
-		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="http://localhost:4000/feed.articles.xml" rel="self" type="application/rss+xml" />
 		
+			
 			<item>
 				<title>Android is Useful Bag 1</title>
 				<description>&lt;p&gt;Aplikasi Android yang berfaedah&lt;/p&gt;
@@ -77,7 +78,9 @@ Fitur :&lt;/p&gt;
 				<link>http://localhost:4000/jekyll/update/2019/04/14/android-berguna-bag-1.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/14/android-berguna-bag-1.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Lambda Calculus Ep 1</title>
 				<description>&lt;p&gt;Lambda Calculus merupakan teori yang berkaitan erat dengan Turing Machine. Dimana Lambda Calculus ini menyerupai Turing Machine dalam sisi Algoritma. Secara ekspresi Lambda Calculus memiliki tiga konstruksi yang disebut &lt;strong&gt;Variabel&lt;/strong&gt;, &lt;strong&gt;Abstraksi&lt;/strong&gt;, dan &lt;strong&gt;Aplikasi&lt;/strong&gt;.&lt;/p&gt;
@@ -227,7 +230,9 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/13/tutorial-lambda-calculus-1.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Stack Smashing Sederhana</title>
 				<description>&lt;p&gt;Stack smashing merupakan teknik yang dapat digunakan untuk bisa berkeliaran diluar fungsi atau variabel. Langsung saja kita ke tutorial stack smashing. Diketahui kode berikut ini : beri nama oke.c&lt;/p&gt;
@@ -382,7 +387,9 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/12/stack-smashing-sederhana.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Tutorial GDB 1</title>
 				<description>&lt;p&gt;GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya&lt;/p&gt;
@@ -571,7 +578,9 @@ gs             0x0                 0
 				<link>http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/11/gdb-tutorial-1.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Vim bagian 3</title>
 				<description>&lt;h2 id=&quot;tutorial-vim-3-macros&quot;&gt;Tutorial Vim 3 Macros&lt;/h2&gt;
@@ -926,7 +935,9 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-3.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-3.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Vim Bagian 2</title>
 				<description>&lt;h2 id=&quot;tutorial-vim-2-navigasi&quot;&gt;Tutorial Vim 2 Navigasi&lt;/h2&gt;
@@ -1082,7 +1093,9 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-2.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Vim Bagian 1</title>
 				<description>&lt;h2 id=&quot;tutorial-vim-1-basic-editing&quot;&gt;Tutorial Vim 1 Basic Editing&lt;/h2&gt;
@@ -1163,7 +1176,9 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-1.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/10/vim-tutorial-1.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Welcome to my Blog!</title>
 				<description>&lt;p&gt;Selamat datang di Blog ini&lt;/p&gt;
@@ -1196,7 +1211,9 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/07/selamat-datang.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/07/selamat-datang.html</guid>
 			</item>
+			
 		
+			
 			<item>
 				<title>Welcome to Jekyll!</title>
 				<description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
@@ -1218,6 +1235,7 @@ s.setAttribute('data-timestamp', +new Date());
 				<link>http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html</guid>
 			</item>
+			
 		
 	</channel>
 </rss>
