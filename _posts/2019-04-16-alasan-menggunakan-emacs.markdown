@@ -23,13 +23,17 @@ Seiring berjalannya waktu, banyak fitur yang saya pelajari di emacs yang dapat d
 2. **EMACS LISP**
    
    Emacs itu LISP Interpreter.
-   
+
+   <center><img src="/assets/img/2019/04/16/2019-04-17-005434_672x700_scrot.png"></center>
+
    Bahasa utama dan konfigurasi untuk emacs menggunakan **LISP**. Dan merupakan salah satu dari Dialek Lisp yang sudah lama.
 
 3. **REPL**
    
    Read-Eval-Print loop atau bahasa simpel nya **Shell**, menggunakan M-x ielm untuk mengeluarkan shell ELISP, dan dapat juga menggunakan M-x eshell-mode untuk menggabungkan fungsi emacs dengan shell. atau M-x ansi-term untuk menggunakan terminal murni
-   
+
+   <center><img src="/assets/img/2019/04/16/2019-04-17-010543_663x701_scrot.png"></center>
+
 4. **Banyak fitur**
    
    Serial access, environment, Windows Splitter, GNU debugger mode, Compiler make -k, dired (file manager), Neotree (Tree di kiri buat program), Magit (Git Interface untuk emacs), TRAMP (Transparent Remote Access, Multiple Protocols) mode untuk remote access editing.
@@ -42,6 +46,8 @@ Seiring berjalannya waktu, banyak fitur yang saya pelajari di emacs yang dapat d
 6. **EVIL**
 
    Bagi para pengguna vim, di emacs dapat di installkan Vim dengan menggunakan evil-mode, jadi lebih mudah buat bikin macros seperti di vim, tinggal q, atau bisa menggantikan M-x jadi :
+
+   <center><img src="/assets/img/2019/04/16/2019-04-17-010849_528x92_scrot.png"></center>
 
 7. **TIDAK PERLU DI CLOSE**
    Emacs dapat dijalankan sebagai Daemon, dan dapat diakses dengan emacs-client. Caranya adalah dengan menjalankan emacs dengan perintah emacs --daemon, lalu mengaksesnya dengan emacs-client -c

@@ -8,6 +8,75 @@
 		
 			
 			<item>
+				<title>Alasan menggunakan Emacs</title>
+				<description>&lt;p&gt;Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan.&lt;/p&gt;
+
+&lt;p&gt;Mulai sejak 2019 Januari saya mencoba emacs, dan sejak saat itu saya mencoba beberapa fitur yang sering saya gunakan di vim yakni macros, dan regex. Dan hasilnya memang agak mengecewakan dikarenakan untuk memanggil regex kita harus repot-repot ngetik &lt;strong&gt;M-x replace-regex&lt;/strong&gt; dan sejenisnya hanya untuk mengetikkan regex sederahana. Belum lagi macrosnya yang kita harus define menggunakan keystroke &lt;strong&gt;C-(&lt;/strong&gt; untuk record, dan &lt;strong&gt;C-)&lt;/strong&gt; untuk stop, yang berasa aneh di jari.&lt;/p&gt;
+
+&lt;p&gt;Saya mulai berpikir untuk tidak menggunakan emacs dan beralih ke vim lagi. Kemudian saya ingat-ingat dan coba cari di youtube tentang evil-mode. Sejak saat itu saya mulai sering menggunakan emacs setiap hari.&lt;/p&gt;
+
+&lt;p&gt;Seiring berjalannya waktu, banyak fitur yang saya pelajari di emacs yang dapat dipertimbangkan. Berikut ini adalah fiturnya;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ORG MODE&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Atau sering disebut organizer mode, merupakan fitur yang sangat vital di emacs. Merupakan jenis bahasa Markup yang dapat digunakan untuk membuat jadwal maupun habit yang berulang.&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-16-235236_757x696_scrot.png&quot; /&gt;&lt;/center&gt;
+
+    &lt;p&gt;fitur yang dapat dikerjakan di org-mode, &lt;strong&gt;export to HTML, Md, Latex&lt;/strong&gt;, &lt;strong&gt;Agenda&lt;/strong&gt;, &lt;strong&gt;Spreadsheet&lt;/strong&gt; (bisa hitung dengan rumus), dan banyak yang belum saya explore.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;EMACS LISP&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Emacs itu LISP Interpreter.&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-17-005434_672x700_scrot.png&quot; /&gt;&lt;/center&gt;
+
+    &lt;p&gt;Bahasa utama dan konfigurasi untuk emacs menggunakan &lt;strong&gt;LISP&lt;/strong&gt;. Dan merupakan salah satu dari Dialek Lisp yang sudah lama.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;REPL&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Read-Eval-Print loop atau bahasa simpel nya &lt;strong&gt;Shell&lt;/strong&gt;, menggunakan M-x ielm untuk mengeluarkan shell ELISP, dan dapat juga menggunakan M-x eshell-mode untuk menggabungkan fungsi emacs dengan shell. atau M-x ansi-term untuk menggunakan terminal murni&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-17-010543_663x701_scrot.png&quot; /&gt;&lt;/center&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Banyak fitur&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Serial access, environment, Windows Splitter, GNU debugger mode, Compiler make -k, dired (file manager), Neotree (Tree di kiri buat program), Magit (Git Interface untuk emacs), TRAMP (Transparent Remote Access, Multiple Protocols) mode untuk remote access editing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Tramp mode : C-x C-f &amp;lt;RET&amp;gt; /su::/etc/sesutu, atau bisa juga /sudo::/etc/sesuatu, atau /ssh:root@123.123.123.1:/etc/sesuatu, dan lain-lain
+Magit : M-x magit-status, c untuk commit, C-c untuk simpan, s untuk staging, ? untuk help&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;EVIL&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Bagi para pengguna vim, di emacs dapat di installkan Vim dengan menggunakan evil-mode, jadi lebih mudah buat bikin macros seperti di vim, tinggal q, atau bisa menggantikan M-x jadi :&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-17-010849_528x92_scrot.png&quot; /&gt;&lt;/center&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TIDAK PERLU DI CLOSE&lt;/strong&gt;
+Emacs dapat dijalankan sebagai Daemon, dan dapat diakses dengan emacs-client. Caranya adalah dengan menjalankan emacs dengan perintah emacs –daemon, lalu mengaksesnya dengan emacs-client -c&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk tutorial Emacs ini akan dibagi menjadi, &lt;strong&gt;Tutorial Org-Mode&lt;/strong&gt;, &lt;strong&gt;Tutorial Emacs Lisp&lt;/strong&gt;, &lt;strong&gt;Tips menggunakan nama_app di emacs&lt;/strong&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 16 Apr 2019 00:00:00 +0800</pubDate>
+				<link>http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html</link>
+				<guid isPermaLink="true">http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html</guid>
+			</item>
+			
+		
+			
+			<item>
 				<title>Tutorial GDB 2</title>
 				<description>&lt;p&gt;Tutorial GDB kali ini hanya membahas tampilan interaktif menggunakan GDB, yang saya baru tau dari yutub. Langsung saja, buat program sederhana&lt;/p&gt;
 

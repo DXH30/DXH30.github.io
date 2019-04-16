@@ -7,6 +7,73 @@
 		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Alasan menggunakan Emacs</title>
+				<description>&lt;p&gt;Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan.&lt;/p&gt;
+
+&lt;p&gt;Mulai sejak 2019 Januari saya mencoba emacs, dan sejak saat itu saya mencoba beberapa fitur yang sering saya gunakan di vim yakni macros, dan regex. Dan hasilnya memang agak mengecewakan dikarenakan untuk memanggil regex kita harus repot-repot ngetik &lt;strong&gt;M-x replace-regex&lt;/strong&gt; dan sejenisnya hanya untuk mengetikkan regex sederahana. Belum lagi macrosnya yang kita harus define menggunakan keystroke &lt;strong&gt;C-(&lt;/strong&gt; untuk record, dan &lt;strong&gt;C-)&lt;/strong&gt; untuk stop, yang berasa aneh di jari.&lt;/p&gt;
+
+&lt;p&gt;Saya mulai berpikir untuk tidak menggunakan emacs dan beralih ke vim lagi. Kemudian saya ingat-ingat dan coba cari di youtube tentang evil-mode. Sejak saat itu saya mulai sering menggunakan emacs setiap hari.&lt;/p&gt;
+
+&lt;p&gt;Seiring berjalannya waktu, banyak fitur yang saya pelajari di emacs yang dapat dipertimbangkan. Berikut ini adalah fiturnya;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;ORG MODE&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Atau sering disebut organizer mode, merupakan fitur yang sangat vital di emacs. Merupakan jenis bahasa Markup yang dapat digunakan untuk membuat jadwal maupun habit yang berulang.&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-16-235236_757x696_scrot.png&quot; /&gt;&lt;/center&gt;
+
+    &lt;p&gt;fitur yang dapat dikerjakan di org-mode, &lt;strong&gt;export to HTML, Md, Latex&lt;/strong&gt;, &lt;strong&gt;Agenda&lt;/strong&gt;, &lt;strong&gt;Spreadsheet&lt;/strong&gt; (bisa hitung dengan rumus), dan banyak yang belum saya explore.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;EMACS LISP&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Emacs itu LISP Interpreter.&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-17-005434_672x700_scrot.png&quot; /&gt;&lt;/center&gt;
+
+    &lt;p&gt;Bahasa utama dan konfigurasi untuk emacs menggunakan &lt;strong&gt;LISP&lt;/strong&gt;. Dan merupakan salah satu dari Dialek Lisp yang sudah lama.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;REPL&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Read-Eval-Print loop atau bahasa simpel nya &lt;strong&gt;Shell&lt;/strong&gt;, menggunakan M-x ielm untuk mengeluarkan shell ELISP, dan dapat juga menggunakan M-x eshell-mode untuk menggabungkan fungsi emacs dengan shell. atau M-x ansi-term untuk menggunakan terminal murni&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-17-010543_663x701_scrot.png&quot; /&gt;&lt;/center&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Banyak fitur&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Serial access, environment, Windows Splitter, GNU debugger mode, Compiler make -k, dired (file manager), Neotree (Tree di kiri buat program), Magit (Git Interface untuk emacs), TRAMP (Transparent Remote Access, Multiple Protocols) mode untuk remote access editing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Tramp mode : C-x C-f &amp;lt;RET&amp;gt; /su::/etc/sesutu, atau bisa juga /sudo::/etc/sesuatu, atau /ssh:root@123.123.123.1:/etc/sesuatu, dan lain-lain
+Magit : M-x magit-status, c untuk commit, C-c untuk simpan, s untuk staging, ? untuk help&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;EVIL&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Bagi para pengguna vim, di emacs dapat di installkan Vim dengan menggunakan evil-mode, jadi lebih mudah buat bikin macros seperti di vim, tinggal q, atau bisa menggantikan M-x jadi :&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;/assets/img/2019/04/16/2019-04-17-010849_528x92_scrot.png&quot; /&gt;&lt;/center&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TIDAK PERLU DI CLOSE&lt;/strong&gt;
+Emacs dapat dijalankan sebagai Daemon, dan dapat diakses dengan emacs-client. Caranya adalah dengan menjalankan emacs dengan perintah emacs –daemon, lalu mengaksesnya dengan emacs-client -c&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Untuk tutorial Emacs ini akan dibagi menjadi, &lt;strong&gt;Tutorial Org-Mode&lt;/strong&gt;, &lt;strong&gt;Tutorial Emacs Lisp&lt;/strong&gt;, &lt;strong&gt;Tips menggunakan nama_app di emacs&lt;/strong&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 16 Apr 2019 00:00:00 +0800</pubDate>
+				<link>http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html</link>
+				<guid isPermaLink="true">http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html</guid>
+			</item>
+		
+			<item>
 				<title>Tutorial GDB 2</title>
 				<description>&lt;p&gt;Tutorial GDB kali ini hanya membahas tampilan interaktif menggunakan GDB, yang saya baru tau dari yutub. Langsung saja, buat program sederhana&lt;/p&gt;
 
@@ -1247,28 +1314,6 @@ s.setAttribute('data-timestamp', +new Date());
 				<pubDate>Sun, 07 Apr 2019 23:09:15 +0800</pubDate>
 				<link>http://localhost:4000/jekyll/update/2019/04/07/selamat-datang.html</link>
 				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/07/selamat-datang.html</guid>
-			</item>
-		
-			<item>
-				<title>Welcome to Jekyll!</title>
-				<description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-				<pubDate>Sun, 07 Apr 2019 01:09:15 +0800</pubDate>
-				<link>http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html</link>
-				<guid isPermaLink="true">http://localhost:4000/jekyll/update/2019/04/07/welcome-to-jekyll.html</guid>
 			</item>
 		
 	</channel>
