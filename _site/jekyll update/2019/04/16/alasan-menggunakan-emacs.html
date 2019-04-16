@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+<!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Alasan menggunakan Emacs | DXH30</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Alasan menggunakan Emacs" />
+<meta name="author" content="Didik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan." />
+<meta property="og:description" content="Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan." />
+<link rel="canonical" href="http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html" />
+<meta property="og:site_name" content="DXH30" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-16T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan.","datePublished":"2019-04-16T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html"},"@type":"BlogPosting","author":{"@type":"Person","name":"Didik"},"url":"http://localhost:4000/jekyll%20update/2019/04/16/alasan-menggunakan-emacs.html","headline":"Alasan menggunakan Emacs","dateModified":"2019-04-16T00:00:00+08:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>DXH30</h1>
+        <h2>DXH30 website for Programming and CTF's Write Ups. and History for github Projects</h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>16 April 2019</small>
+<h1>Alasan menggunakan Emacs</h1>
+
+<p class="view">by Didik</p>
+
+<p>Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan.</p>
+
+<p>Mulai sejak 2019 Januari saya mencoba emacs, dan sejak saat itu saya mencoba beberapa fitur yang sering saya gunakan di vim yakni macros, dan regex. Dan hasilnya memang agak mengecewakan dikarenakan untuk memanggil regex kita harus repot-repot ngetik <strong>M-x replace-regex</strong> dan sejenisnya hanya untuk mengetikkan regex sederahana. Belum lagi macrosnya yang kita harus define menggunakan keystroke <strong>C-(</strong> untuk record, dan <strong>C-)</strong> untuk stop, yang berasa aneh di jari.</p>
+
+<p>Saya mulai berpikir untuk tidak menggunakan emacs dan beralih ke vim lagi. Kemudian saya ingat-ingat dan coba cari di youtube tentang evil-mode. Sejak saat itu saya mulai sering menggunakan emacs setiap hari.</p>
+
+<p>Seiring berjalannya waktu, banyak fitur yang saya pelajari di emacs yang dapat dipertimbangkan. Berikut ini adalah fiturnya;</p>
+
+<ol>
+  <li>
+    <p><strong>ORG MODE</strong></p>
+
+    <p>Atau sering disebut organizer mode, merupakan fitur yang sangat vital di emacs. Merupakan jenis bahasa Markup yang dapat digunakan untuk membuat jadwal maupun habit yang berulang.</p>
+
+    <center><img src="/assets/img/2019/04/16/2019-04-16-235236_757x696_scrot.png" /></center>
+
+    <p>fitur yang dapat dikerjakan di org-mode, <strong>export to HTML, Md, Latex</strong>, <strong>Agenda</strong>, <strong>Spreadsheet</strong> (bisa hitung dengan rumus), dan banyak yang belum saya explore.</p>
+  </li>
+  <li>
+    <p><strong>EMACS LISP</strong></p>
+
+    <p>Emacs itu LISP Interpreter.</p>
+
+    <p>Bahasa utama dan konfigurasi untuk emacs menggunakan <strong>LISP</strong>. Dan merupakan salah satu dari Dialek Lisp yang sudah lama.</p>
+  </li>
+  <li>
+    <p><strong>REPL</strong></p>
+
+    <p>Read-Eval-Print loop atau bahasa simpel nya <strong>Shell</strong>, menggunakan M-x ielm untuk mengeluarkan shell ELISP, dan dapat juga menggunakan M-x eshell-mode untuk menggabungkan fungsi emacs dengan shell. atau M-x ansi-term untuk menggunakan terminal murni</p>
+  </li>
+  <li>
+    <p><strong>Banyak fitur</strong></p>
+
+    <p>Serial access, environment, Windows Splitter, GNU debugger mode, Compiler make -k, dired (file manager), Neotree (Tree di kiri buat program), Magit (Git Interface untuk emacs), TRAMP (Transparent Remote Access, Multiple Protocols) mode untuk remote access editing.</p>
+  </li>
+  <li>
+    <p><strong>Tips</strong></p>
+
+    <p>Tramp mode : C-x C-f &lt;RET&gt; /su::/etc/sesutu, atau bisa juga /sudo::/etc/sesuatu, atau /ssh:root@123.123.123.1:/etc/sesuatu, dan lain-lain
+Magit : M-x magit-status, c untuk commit, C-c untuk simpan, s untuk staging, ? untuk help</p>
+  </li>
+  <li>
+    <p><strong>EVIL</strong></p>
+
+    <p>Bagi para pengguna vim, di emacs dapat di installkan Vim dengan menggunakan evil-mode, jadi lebih mudah buat bikin macros seperti di vim, tinggal q, atau bisa menggantikan M-x jadi :</p>
+  </li>
+  <li>
+    <p><strong>TIDAK PERLU DI CLOSE</strong>
+Emacs dapat dijalankan sebagai Daemon, dan dapat diakses dengan emacs-client. Caranya adalah dengan menjalankan emacs dengan perintah emacs –daemon, lalu mengaksesnya dengan emacs-client -c</p>
+  </li>
+</ol>
+
+<p>Untuk tutorial Emacs ini akan dibagi menjadi, <strong>Tutorial Org-Mode</strong>, <strong>Tutorial Emacs Lisp</strong>, <strong>Tips menggunakan nama_app di emacs</strong>.</p>
+
+
+
+  <small>tags: <em></em></small>
+
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
