@@ -8,7 +8,7 @@ category: jekyll update
 Berikut ini adalah tips menggunakan Google
 
 1. Baca langsung disini, **Google CheatSheet** dari Zapier.
-   <center><img src="/assets/img/googlecheatsheet.jpeg"></center>
+   <center><img src="/assets/img/2019/04/17/googlecheatsheet.jpeg"></center>
 
 2. Cukup dibaca diatas bagi yang paham bahasa inggris
 
