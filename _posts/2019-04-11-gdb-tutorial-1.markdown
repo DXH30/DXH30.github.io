@@ -2,6 +2,7 @@
 layout: post
 title:  "Tutorial GDB 1"
 author: Didik
+tags: debugger gdb tutorial part1 bagian flag reverse engineering assembly 
 categories: jekyll update
 ---
 GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile program. Tutorial singkatnya

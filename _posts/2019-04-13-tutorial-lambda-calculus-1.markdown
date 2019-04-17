@@ -2,6 +2,7 @@
 layout: post
 title:  "Lambda Calculus Ep 1"
 author: Didik
+tags: lambda calculus kalkulus turing machine mesin lisp functional programming pemrograman fungsional anonymous function fungsi anonim
 categories: jekyll update
 ---
 

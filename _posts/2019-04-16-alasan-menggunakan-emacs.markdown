@@ -2,6 +2,7 @@
 layout: post
 title: Alasan menggunakan Emacs
 author: Didik
+tags: emacs tutorial hacking server easy editor config cara teknik serbaguna vim vscode visual studio code sublime text pakai lisp organizer mode org tramp repl daemon service 
 category: jekyll update
 ---
 Saya sudah menggunakan vim sejak SMK kelas 2 atau sekitar tahun 2012, dan suka dengan fitur navigasi, perintah, dan regex, yang sering saya gunakan untuk update configurasi server secara instan.

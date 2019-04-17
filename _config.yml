@@ -28,6 +28,7 @@ markdown: kramdown
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 gems:
   - jekyll-terminal
 terminal:

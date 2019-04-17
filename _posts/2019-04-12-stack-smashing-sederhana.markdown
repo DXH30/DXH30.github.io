@@ -2,6 +2,7 @@
 layout: post
 title:  "Stack Smashing Sederhana"
 author: Didik
+tags: hacking stack overflow smashing root rootkit security networking c programming bugs bug
 categories: jekyll update
 ---
 

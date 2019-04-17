@@ -2,6 +2,7 @@
 layout: post
 title:  "Vim Bagian 1"
 author: Didik
+tags: vim editor belajar tutorial part1 console terminal shell script programming program pemrograman
 categories: jekyll update
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 author: Didik
 title: "Google berfaedah Bagian 1"
+tags: tips trick search engine mesin pencari mudah easy teknik intitle allintitle site inurl petunjuk cara
 category: jekyll update
 ---
 

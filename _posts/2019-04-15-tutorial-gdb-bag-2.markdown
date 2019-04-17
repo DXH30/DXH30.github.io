@@ -2,6 +2,7 @@
 layout: post
 title: "Tutorial GDB 2"
 author: Didik
+tags: debugger gdb tutorial part1 bagian flag reverse engineering assembly bagian 2 dua 
 categories: jekyll update
 ---
 
