@@ -3,7 +3,7 @@ layout: post
 author: Didik
 title: Konfigurasi IP lewat Netsh Windows
 tags: windows dos msdos cmd command line prompt shell netsh netshell ip address interface setting konfigurasi config alamat
-category: jekyll update
+category: windows cmd
 ---
 
 Berikut ini adalah cara konfigurasi ip melalui Netsh di Windows.

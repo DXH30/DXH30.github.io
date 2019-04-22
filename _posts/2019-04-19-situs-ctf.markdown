@@ -1,0 +1,18 @@
+---
+layout: post
+author: Didik
+title: Situs CTF
+category: jekyll update
+---
+1. Untuk belajar CTF, dapat diakses di situs berikut ini.
+
+ctfs.me buatan Binus University
+rootme.org merupakan situs CTF dari Prancis
+
+2. Yang dua diatas adalah sebagian kecil dari banyak situs yang berisikan challenge CTF maupun Membahas CTF. Dan biasanya situs dari hampir setiap tim CTF berisikan konten writeUp maupun challenge.
+
+3. Ini situsnya
+
+[CTFTIME.ORG](https://ctftime.org)
+
+4. Berikutnya akan dibahas writeUp yang dapat di selesaikan dari beberapa CTF disini
