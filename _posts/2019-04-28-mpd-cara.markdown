@@ -1,0 +1,105 @@
+---
+layout: post
+title: Tutorial menggunakan MPD dan MPC
+author: Didik
+category: Music Player Linux
+---
+
+MPD adalah Music Player Daemon, MPC adalah Music Player Client. Keduanya merupakan Music Player yang berjalan di jaringan. Cara nya dipakai ?
+
+1. Install dulu mpd dan mpc, contohnya di anak debian
+
+	```console
+	user@localhost:~$ sudo apt-get install mpd mpc
+	```
+
+2. Setelah itu buat konfigurasi sendiri di ~/.mpd/config, kalau sudah ada, hapus dan buat lagi dari kosong, isikan ini 
+
+	```config
+	music_directory "~/Music"
+	playlist_directory "~/.mpd/playlists"
+	db_file "~/.mpd/mpd.db"
+	log_file "~/.mpd/mpd.log"
+	pid_file "~/.mpd/mpd.pid"
+	state_file "~/.mpd/mpdstate"
+	```
+
+3. Jalankan MPD
+
+	```console
+	user@localhost:~$ mpd ~/.mpd/config
+	```
+
+4. Buat playlist nya dengan cara list filenya dan di add di mpc
+
+	```console
+	user@localhost:~$ cd Music
+	user@localhost:~/Music$ find -name "*.mp3" | sed 's%^./%%g' > all.m3u
+	user@localhost:~/Music$ cd ..
+	```
+
+5. Terus pindah all.m3u ke direktori ~/.mpd/playlists
+
+	```console
+	user@localhost:~$ mv Music/all.m3u ~/.mpd/playlists
+	```
+
+6. Lalu add dengan mpc, jalankan update kalau filenya baru di add
+
+	```console
+	user@localhost:~$ mpc update
+	user@localhost:~$ mpc load all
+	```
+
+7. Setelah itu coba list dengan mpc listall, dan play dengan mpc play [index]
+
+	```console
+	user@localhost:~$ mpc listall
+	.
+	.
+	.
+	user@localhost:~$ mpc play 2
+	```
+
+8. Dengan melihat dari playlist, dan disitu urutannya dari atas ke bawah 1 sampai total musik
+
+	```console
+	user@localhost:~$ mpc playlist
+	```
+
+9. Coba dilihat indexnya
+
+	```console
+	user@localhost:~$ cat -n <(mpc playlist)
+	```
+
+10. Cara di next dan di prev
+
+	```console
+	user@localhost:~$ mpc next
+	user@localhots:~$ mpc prev
+	```
+
+11. Cara di shuffle
+
+	```console
+	user@localhost:~$ mpc shuffle
+	```
+
+12. Cara ?
+
+	```console
+	user@localhost:~$ mpc help
+	```
+
+13. **BONUS**, Install NCMPCPP
+
+	```console
+	user@localhost:~$ apt-get install ncmpcpp
+	```
+
+14. Coba dibuka, Ada tampilannya :D
+
+	```console
+	user@localhost:~$ ncmpcpp
+	```
