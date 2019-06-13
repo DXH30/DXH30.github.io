@@ -193,3 +193,4 @@ GDB (Gnu Debugger) dapat dimanfaatkan dengan menambah flag -g saat mengkompile p
 	```
 
 Cukup itu untuk dasar-dasar gdb, kalau kurang ditunggu Tutorial selanjutnya. Pemahaman gdb sangat dibutuhkan untuk memulai CTF, karena bakal banyak kepake ilmunya
+{% include disqus.html %}

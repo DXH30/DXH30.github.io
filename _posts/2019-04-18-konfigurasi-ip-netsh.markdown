@@ -31,3 +31,4 @@ C:\Users\Home> netsh interface ip add dns "Ethernet Connection 1" 8.8.8.8
 Postingan ini saya buat hanya untuk ingat-ingat
 
 
+{% include disqus.html %}

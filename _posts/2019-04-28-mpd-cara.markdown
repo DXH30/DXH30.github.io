@@ -103,3 +103,5 @@ MPD adalah Music Player Daemon, MPC adalah Music Player Client. Keduanya merupak
 	```console
 	user@localhost:~$ ncmpcpp
 	```
+
+{% include disqus.html %}

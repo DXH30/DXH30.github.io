@@ -43,3 +43,4 @@ Berikut ini adalah tips menggunakan Google
 5. Tanya kalau bingung, jangan tanya kalau tidak tau
 
 note: Sorry btw w jg bingung mau tulis apa, sekian dulu, yang penting up to date.
+{% include disqus.html %}
