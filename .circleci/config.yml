@@ -1,9 +1,7 @@
-defaults: &defaults
 working_directory: ~/dxh30.github.io
 version: 2
 jobs:
         build:
-                <<: *defaults
                 docker:
                         - image: circleci/ruby:2.5
                 environment:
