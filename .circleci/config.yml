@@ -18,9 +18,6 @@ jobs:
                         - run:
                                 name: Bundle Install
                                 command: bundle check || bundle install
-                        - run:
-                                name: HTMLproofer Install
-                                command: gem install html-proofer
                         - save_cache:
                                 key: rubygems-v1-{{ checksum "Gemfile.lock" }}
                                 paths:
