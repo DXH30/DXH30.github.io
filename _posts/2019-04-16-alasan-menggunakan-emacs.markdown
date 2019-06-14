@@ -54,3 +54,4 @@ Seiring berjalannya waktu, banyak fitur yang saya pelajari di emacs yang dapat d
    Emacs dapat dijalankan sebagai Daemon, dan dapat diakses dengan emacs-client. Caranya adalah dengan menjalankan emacs dengan perintah emacs --daemon, lalu mengaksesnya dengan emacs-client -c
 
 Untuk tutorial Emacs ini akan dibagi menjadi, **Tutorial Org-Mode**, **Tutorial Emacs Lisp**, **Tips menggunakan nama_app di emacs**.
+{% include disqus.html %}

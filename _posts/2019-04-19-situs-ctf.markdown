@@ -16,3 +16,4 @@ rootme.org merupakan situs CTF dari Prancis
 [CTFTIME.ORG](https://ctftime.org)
 
 4. Berikutnya akan dibahas writeUp yang dapat di selesaikan dari beberapa CTF disini
+{% include disqus.html %}

@@ -25,3 +25,4 @@ C-x C-f \<RET\> /db:Documents/Orgzly/myagenda.org
 2. Menggunakan Orgzly untuk membuka dan menjadikannya Aplikasi untuk Habit Tracker dan Organizer pada HP Android
 
 3. Kelebihan menggunakan skenario ini adalah kita dapat dengan nyaman mengedit dengan hanya memahami Markdown dan Org-Mode, dan karena konfigurasi ini menggunakan ORG-Mode, sehingga sangat powerful.
+{% include disqus.html %}

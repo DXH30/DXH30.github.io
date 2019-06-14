@@ -57,3 +57,4 @@ coba next, instruksinya.
 ```
 
 disitu sudah kelihatan kalau instruction pointer dan instruksi nya berlanjut ke perintah berikutnya. Untuk melihat disasembler nya, ketik C-x 2 lagi. Buat balik, ketik C-x 2 lagi sekali. ok
+{% include disqus.html %}

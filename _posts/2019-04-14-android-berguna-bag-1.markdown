@@ -64,3 +64,4 @@ Ini bisa jadi remote keyboard lewat Telnet. (Cocok buat yang gak punya Bluetooth
 # Root
 
 Root hp kalau serius, cari [disini](https://www.google.com) cara rootnya, good luck.
+{% include disqus.html %}
