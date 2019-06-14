@@ -1,17 +1,3 @@
-version: 2
-
-machine:
-        environment:
-                NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-
-dependencies:
-        post:
-                - bundle exec jekyll build
-
-test:
-        post:
-                - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external
-
 defaults: &defaults
 working_directory: ~/dxh30.github.io
 version: 2
