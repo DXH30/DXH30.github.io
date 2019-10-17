@@ -11,7 +11,7 @@ Berikut ini adalah cara konfigurasi ip melalui Netsh di Windows.
 Buka Command Line, dan Ketikkan perintah berikut untuk melihat list nama koneksi
 
 ```console
-C:\Users\Home\> netsh interface show interfaces
+C:\Users\Home\> netsh interface show interface
 ```
 
 Kemudian ketikkan perintah.
