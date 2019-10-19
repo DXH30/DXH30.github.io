@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Menggunakan XDG untuk membuka semua file lewat terminal
 author: Didik
 category: linux
