@@ -1,0 +1,10 @@
+---
+title: Pengenalan LaTeX untuk pemula
+author: Didik Hadumi Setiaji
+category: science
+tag: latex
+---
+
+LaTeX, dimana X nya dibaca ch dari huruf X (Chi) abjad yunani, merupakan cara lain mengetik dokumen, dan merupakan teknik yang lebih dahulu ada dari word processing. LaTeX ditulis sebagaimana menulis sebuah program. LaTeX dapat dikatakan bahasa pemrograman juga, mungkin lebih tepatnya MarkUp Language yang memiliki beberapa hal yang biasa ada di Bahasa Pemrograman seperti  pendefinisian fungsi dan kondisi dan class serta package.
+
+Dalam LaTeX kita dapat membuat class
