@@ -13,3 +13,5 @@ Cara untuk mengetahui error ketika menjalankan perintah di linux cukup mudah :
 strace namaprogram
 
 Lalu cari dimana errornya dan mengapa, biasanya akan langsung ketemu
+
+{% include disqus.html %}

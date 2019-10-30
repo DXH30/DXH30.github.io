@@ -27,3 +27,4 @@ Windows 10 suka update sendiri, cara mematikannya bisa :
 	
 Setelah itu Windows akan berhenti update
 	
+{% include disqus.html %}

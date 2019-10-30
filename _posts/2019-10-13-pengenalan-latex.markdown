@@ -14,3 +14,5 @@ Beberapa aplikasi offline untuk menggunakan latex adalah :
 Dan untuk online nya saya biasa menggunakan :
  - Overleaf (Khusus untuk pengguna latex murni) untuk kolaborasi dan git repo support harus bayar
  - Authorea (Digabung dengan Rich Text Format seperti word) cocok untuk kolaborasi dengan non pengguna latex
+
+{% include disqus.html %}

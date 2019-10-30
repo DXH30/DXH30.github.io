@@ -36,3 +36,4 @@ untuk mengganti aplikasi pembukanya menjadi feh dapat dengan cara :
 ```console
 user@localhost:~$ xdg-mime default feh.desktop image/jpeg
 ```
+{% include disqus.html %}

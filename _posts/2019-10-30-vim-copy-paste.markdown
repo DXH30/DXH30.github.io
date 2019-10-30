@@ -62,3 +62,4 @@ vim sudah bisa clipboard dengan perintah
 	```
 
 Note : Kalau tidak bisa backspace di insert mode coba masukkan set backspace=2 di dalam .vimrc lalu buka ulang vim
+{% include disqus.html %}
