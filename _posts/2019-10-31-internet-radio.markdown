@@ -43,3 +43,5 @@ MPD selain dapat digunakan sebagai music player, kita juga dapat memanfaatkan MP
    ```console
    user@localhost:~$ mpd -c ~/.mpd/config
    ```
+
+{% include disqus.html %}
