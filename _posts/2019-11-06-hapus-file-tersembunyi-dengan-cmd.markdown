@@ -26,5 +26,6 @@ Sebelum memformat flashdisk di windows coba perhatikan ukuran flashdisk nya dan 
    F:\ \> explorer
    ```
 6. Silahkan hapus yang aneh, dan pindahkan data-data yang seharusnya ada disitu
+7. Baru setelah itu format flashdisk anda
 
 {% include disqus.html %}
