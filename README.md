@@ -1,7 +1,9 @@
 # DXH30.github.io
 Team Name : G.E.M.P.A
-
+Name : DXH30
 Occupation : Team Leaders
+
+[![Coding time tracker](https://wakatime.com/badge/github/DXH30/DXH30.github.io.svg)](https://wakatime.com/badge/github/DXH30/DXH30.github.io)
 
 ## Intro
 Input your Challenge Here
