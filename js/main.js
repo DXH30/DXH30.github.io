@@ -50,10 +50,17 @@ function processCommand(command) {
         case "/help":
             openHelp();
             break;
+	case "/exit":
+	    closeAllWindow();
+	    break;
         default:
             commandNotFound(command);
             break;
     }
+}
+
+function closeAllWindow() {
+    document.querySelector('.my-window').remove();
 }
 
 function commandNotFound(command) {
@@ -63,6 +70,8 @@ function commandNotFound(command) {
 function openAbout() {
     const aboutBox = new WinBox({
         title: 'About Me',
+	id: 'about-window',
+	class: 'my-window',
         // modal: true,
         width: '400px',
         height: '400px',
@@ -83,6 +92,8 @@ function openAbout() {
 function openContact() {
     const contactBox = new WinBox({
         title: 'Contact Me',
+	id: 'about-window',
+	class: 'my-window',
         width: '400px',
         height: '400px',
         top: 50,
@@ -102,6 +113,8 @@ function openContact() {
 function openSearch() {
     const searchBox = new WinBox({
         title: 'Search',
+	id: 'about-window',
+	class: 'my-window',
         width: '400px',
         height: '400px',
         top: 50,
@@ -121,6 +134,8 @@ function openSearch() {
 function openHelp() {
     const helpBox = new WinBox({
         title: 'Help',
+	id: 'about-window',
+	class: 'my-window',
         width: '400px',
         height: '400px',
         top: 50,
