@@ -62,7 +62,6 @@ nav ul li {
 }
 
 .container {
-  max-width: 600px;
   margin: auto;
   height: 70vh;
   display: flex;

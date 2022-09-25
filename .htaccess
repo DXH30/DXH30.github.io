@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^dxh30\.my\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dxh30\.my\.id$
+RewriteRule ^/?$ "https\:\/\/dxh30\.my\.id\/" [R=301,L]
+
