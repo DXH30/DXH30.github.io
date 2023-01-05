@@ -60,7 +60,10 @@ function processCommand(command) {
 }
 
 function closeAllWindow() {
-    document.querySelector('.my-window').remove();
+    var allWindow = document.querySelectorAll('.my-window');
+    allWindow.forEach(function(item) {
+        item.remove();
+    });
 }
 
 function commandNotFound(command) {
